@@ -1,6 +1,6 @@
 #project {
     display: grid;
-    max-width: 100px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
     grid-template-areas: 'staticHeading staticHeading'
@@ -12,6 +12,10 @@
                          'gameHead gameHead'
                          'comLineHead comLineHead'
                          'comLineBox comLineBox';
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px repeat(3, 50px 50px 400px);
+    justify-content: center;
 }
 
 .staticHeading {
@@ -28,10 +32,15 @@
 
 .lamboBox {
     grid-area: lamboBox;
-} 
+    background-image: url('../img/lambo.jpg');
+
+}   
+
 
 .compWebBox {
     grid-area: compWebBox;
+    background-image: url('../img/company_website.jpg');
+
 }
 
 .dinamicHeading {
@@ -48,10 +57,12 @@
 
 .webCompBox {
     grid-area: webCompBox;
+    background-image: url('../img/company_website.jpg');
 } 
 
 .finWebBox {
     grid-area: finWebBox;
+    background-image: url('../img/finance.jpg');
 } 
 
 .gameHead {
@@ -64,4 +75,12 @@
 
 .comLineBox {
     grid-area: comLineBox;
+    background-image: url('../img/tictactoe.jpg');
+}
+
+#project div {
+    width: 300px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
