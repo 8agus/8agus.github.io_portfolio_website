@@ -1,0 +1,67 @@
+#project {
+    display: grid;
+    max-width: 100px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: 'staticHeading staticHeading'
+                         'lamboHeading compWebHead'
+                         'lamboBox compWebBox'
+                         'dinamicHeading dinamicHeading'
+                         'webCompHead finWebHead'
+                         'webCompBox finWebBox'
+                         'gameHead gameHead'
+                         'comLineHead comLineHead'
+                         'comLineBox comLineBox';
+}
+
+.staticHeading {
+    grid-area: staticHeading;
+}
+
+.lamboHeading {
+    grid-area: lamboHeading;
+}
+
+.compWebHead {
+    grid-area: compWebHead;
+}
+
+.lamboBox {
+    grid-area: lamboBox;
+} 
+
+.compWebBox {
+    grid-area: compWebBox;
+}
+
+.dinamicHeading {
+    grid-area: dinamicHeading;
+}
+
+.webCompHead {
+    grid-area: webCompHead;
+} 
+
+.finWebHead {
+    grid-area: finWebHead;
+}
+
+.webCompBox {
+    grid-area: webCompBox;
+} 
+
+.finWebBox {
+    grid-area: finWebBox;
+} 
+
+.gameHead {
+    grid-area: gameHead;
+}
+
+.comLineHead {
+    grid-area: comLineHead;
+}
+
+.comLineBox {
+    grid-area: comLineBox;
+}
