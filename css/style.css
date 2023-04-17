@@ -3,7 +3,8 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
-    grid-template-areas: 'staticHeading staticHeading'
+    grid-template-areas: 'mainProjHead mainProjHead'
+                         'staticHeading staticHeading'
                          'lamboHeading compWebHead'
                          'lamboBox compWebBox'
                          'dinamicHeading dinamicHeading'
@@ -16,6 +17,11 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px repeat(3, 50px 50px 400px);
     justify-content: center;
+}
+
+.mainProjHead {
+    grid-area: mainProjHead;
+    
 }
 
 .staticHeading {
@@ -80,7 +86,13 @@
 
 #project div {
     width: 300px;
-    height: 200px;
+    height: 300px;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+h2, 
+h1,
+#email {
+    text-align: center;
 }
