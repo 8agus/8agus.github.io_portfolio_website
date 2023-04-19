@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Portfolion Website: {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="project.html">Projects</a>
+        <a href="certification.html">Certifications</a>
+        <a href="contact.html">Cantact</a>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+    <footer >Infinitus Web Services</footer>
+</body>
+</html>
