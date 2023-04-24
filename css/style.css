@@ -35,7 +35,8 @@ h1 {
 }
 
 #profileText,
-#project {
+#project,
+#certification {
     width: 90%;
     left: 5%;
     border-radius: 10%;
@@ -55,7 +56,7 @@ h1 {
 }
 
 
-/* Project Section */
+                /* Project Section */
 #project h1 {
     background-color: #1C658C;
     text-align: center;
@@ -171,18 +172,33 @@ footer,
 #certification {
     display: grid;
     position: relative;
-    grid-template-areas: 'cs50head cs50head cshead cshead'
-                         'cs50pic cs50topic csPic csTopic'
-                         'csshead csshead pythonhead pythonhead'
-                         'cssPic cssTopic pythonPic pythonTopic '
-                         'eHackHead eHackHead clHead clHead'
-                         'eHackPic eHackTopic clpic clTopic'
-                         'stackHead stackHead stackHead stackHead'
-                         'stackPic stackPic stackTopic stackTopic';
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(4, 50px 300px );
-    justify-content: center;
+    grid-template-areas: 'cs50head cs50head'
+                         'cs50pic cs50topic'
+                         'cshead cshead' 
+                         'csPic csTopic'
+                         'pythonhead pythonhead'
+                         'pythonPic pythonTopic'
+                         'csshead csshead' 
+                         'cssPic cssTopic'
+                         'eHackHead eHackHead'
+                         'eHackPic eHackTopic'
+                         'clHead clHead'
+                         'clpic clTopic'
+                         'stackHead stackHead'
+                         'stackPic stackTopic';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(8, 50px 250px );
+    justify-items: center;
+    gap: 10px;
+    border: 2px solid rgb(207, 25, 119);
+}
 
+.certBox {
+    width: 300px;
+    height: 234px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #cs50head {
@@ -195,14 +211,22 @@ footer,
 
 #cs50pic {
     grid-area: cs50pic;
+    background-image: url('../img/cs50.jpg');
+    width: 300px;
+    height: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #cs50topic {
     grid-area: cs50topic;
+    height: 160px;
 }
 
 #csPic {
     grid-area: csPic;
+    background-image: url('../img/computer_science.jpg');
 }
 
 
@@ -216,6 +240,7 @@ footer,
 
 #cssPic {
     grid-area: cssPic;
+    background-image: url('../img/css.jpg');
 }
 
 #cssTopic {
@@ -228,6 +253,7 @@ footer,
 
 #pythonPic {
     grid-area: pythonPic;
+    background-image: url('../img/python.jpg');
 }
 
 #pythonTopic {
@@ -240,6 +266,7 @@ footer,
 
 #eHackPic {
     grid-area: eHackPic;
+    background-image: url('../img/ethical_hacking.jpg');
 }
 
 #eHackTopic {
@@ -252,6 +279,7 @@ footer,
 
 #clpic {
     grid-area: clpic;
+    background-image: url('../img/command_line.jpg');
 }
 
 #clTopic {
@@ -268,4 +296,12 @@ footer,
 
 #stackTopic {
     grid-area: stackTopic;
+}
+
+li {
+    display: block;
+}
+
+article {
+    width: 100%;
 }
