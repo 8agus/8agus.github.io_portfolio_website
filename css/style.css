@@ -164,3 +164,108 @@ footer,
 #email {
     text-align: center;
 }
+
+
+
+                    /* Certification Page  */
+#certification {
+    display: grid;
+    position: relative;
+    grid-template-areas: 'cs50head cs50head cshead cshead'
+                         'cs50pic cs50topic csPic csTopic'
+                         'csshead csshead pythonhead pythonhead'
+                         'cssPic cssTopic pythonPic pythonTopic '
+                         'eHackHead eHackHead clHead clHead'
+                         'eHackPic eHackTopic clpic clTopic'
+                         'stackHead stackHead stackHead stackHead'
+                         'stackPic stackPic stackTopic stackTopic';
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(4, 50px 300px );
+    justify-content: center;
+
+}
+
+#cs50head {
+    grid-area: cs50head;
+}
+
+#cshead {
+    grid-area: cshead;
+}
+
+#cs50pic {
+    grid-area: cs50pic;
+}
+
+#cs50topic {
+    grid-area: cs50topic;
+}
+
+#csPic {
+    grid-area: csPic;
+}
+
+
+#csTopic {
+    grid-area: csTopic;
+}
+
+#csshead {
+    grid-area: csshead;
+}
+
+#cssPic {
+    grid-area: cssPic;
+}
+
+#cssTopic {
+    grid-area: cssTopic;
+}
+
+#pythonhead {
+    grid-area: pythonhead;
+}
+
+#pythonPic {
+    grid-area: pythonPic;
+}
+
+#pythonTopic {
+    grid-area: pythonTopic;
+}
+
+#eHackHead {
+    grid-area: eHackHead;
+}
+
+#eHackPic {
+    grid-area: eHackPic;
+}
+
+#eHackTopic {
+    grid-area: eHackTopic;
+}
+
+#clHead {
+    grid-area: clHead;
+}
+
+#clpic {
+    grid-area: clpic;
+}
+
+#clTopic {
+    grid-area: clTopic;
+}
+
+#stackHead {
+    grid-area: stackHead;
+}
+
+#stackPic {
+    grid-area: stackPic;
+}
+
+#stackTopic {
+    grid-area: stackTopic;
+}
