@@ -1,6 +1,7 @@
 body {
-    background-color: #159895;
+    /* background-color: #159895; */
     color: #f1f7f7;
+    background-image: url("https://static.videezy.com/system/resources/previews/000/042/967/original/Techno_0009.mp4"); background-repeat: repeat;
 }
 
 li {
@@ -187,7 +188,7 @@ footer,
                          'stackHead stackHead'
                          'stackPic stackTopic';
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(8, 50px 250px );
+    grid-template-rows: repeat(7, 50px 250px );
     justify-items: center;
     gap: 10px;
     border: 2px solid rgb(207, 25, 119);
@@ -217,7 +218,9 @@ footer,
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
+
 
 #cs50topic {
     grid-area: cs50topic;
@@ -258,6 +261,7 @@ footer,
 
 #pythonTopic {
     grid-area: pythonTopic;
+    
 }
 
 #eHackHead {
@@ -292,6 +296,13 @@ footer,
 
 #stackPic {
     grid-area: stackPic;
+    background-image: url('../img/full_stack.jpg');
+    width: 300px;
+    height: 129px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #stackTopic {
