@@ -1,11 +1,21 @@
 body {
-    /* background-color: #159895; */
     color: #f1f7f7;
-    background-image: url("https://static.videezy.com/system/resources/previews/000/042/967/original/Techno_0009.mp4"); background-repeat: repeat;
 }
 
 li {
     display: inline;
+}
+
+/* Turquoise boxes */
+#about,
+#project,
+#certification {
+    width: 90%;
+    left: 5%;
+    border-radius: 10%;
+    position: relative;
+    z-index: -1;
+    background-color: #1C658C;
 }
 
 /* About Me Section  */
@@ -17,14 +27,21 @@ h1 {
     height: 35px;
 }
 
+/* #about {
+    display: grid;
+    position: relative;
+    grid-template-areas: 'profileDivPic firstParagraph'
+                          ;
+} */
+
 #profileDivPic{
-    width: 180px;
+    width: auto;
     height: 150px;
     position: absolute;   
-    left: 7%;
-    top: 8%;
+    left: 0%;
+    top: -20%;
     z-index: auto;
-    /* border-radius: 50%; */
+    margin-top: 8%;
 }
 
 #profileImg {
@@ -32,19 +49,14 @@ h1 {
     max-height: 100%;
     display: block;
     background-size: cover;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
-#profileText,
-#project,
-#certification {
-    width: 90%;
-    left: 5%;
-    border-radius: 10%;
-    position: relative;
-    z-index: -1;
-    background-color: #1C658C;
+#profileText {
+    margin-top: 10%;
+    font-size: 20px;
 }
+
 
 #firstParagraph {
     position: relative;
@@ -157,9 +169,11 @@ h1 {
     background-size: cover;
 }   
 
-div {
+
+/* Have disabled for animated profile */
+/* div {
     border: 2px solid rgb(238, 7, 7);
-}
+} */
 
 
 footer,
