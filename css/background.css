@@ -1,7 +1,7 @@
-.main {
+/* .main {
     background-color: #000;
     foreground-color: green;
-}
+} */
 
 
 
@@ -9,8 +9,8 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: $bgcolor;
-    color: $fgcolor;
+    background-color: bgcolor;
+    color: fgcolor;
 }
 
 .lines {

@@ -1,5 +1,5 @@
 var main = document.querySelector(".main");
-main.insertAdjacentHTML( 'beforeend', 'content' );
+main.insertAdjacentHTML( 'beforeend', 'cntent');
 
 var lineCount = 40;
 var minCharCount = 20;
