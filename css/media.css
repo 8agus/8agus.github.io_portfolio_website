@@ -1,0 +1,29 @@
+@media only screen and (max-width: 700px) {
+    #about {
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.01fr 0.13fr 0.26fr 0.18fr 0.18fr;
+        grid-template-areas: 'profileDivPic'
+                            'paragraph1'
+                            'paragraph2'
+                            'paragraph3'
+                            'paragraph4'
+                            'paragraph5';
+    }
+
+    #profileDivPic {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        margin-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 1074px) {
+    #profileDivPic {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        margin-top: 0%;
+        margin-right: 10%;
+    }
+}
