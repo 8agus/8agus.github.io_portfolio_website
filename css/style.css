@@ -1,18 +1,21 @@
 body {
     background-color: rgb(6, 6, 6);
-    color: white;
+    /* color: white; */
+    color: #39FF14;
 }
 
 nav {
     position: relative;
-    left: 36%;
+    left: 27%;
     display: flex;
-}
+    width: 80%;
+} 
+
 a {
-    
-    color: rgb(231, 18, 18);
+    /* color: rgb(231, 18, 18); */
+    color: #39FF14;
     font-size: 1.3em;
-    padding-left: 2%;
+    margin-left: 5%;
     background-color: black;
     
 }
@@ -31,13 +34,16 @@ li {
     position: relative;
     z-index: -1;
     background-color: #1C658C;
+    /* background-color: #FF5733; */
+    border: 5px solid #f42606;
+
 }
 
 /* About Me Section  */
 h1 {
     background-color: #1C658C;
     text-align: center;
-    border: 2px solid black;
+    border: 5px solid #f42606;
     width: 100%;
     height: 35px;
 }
@@ -52,7 +58,7 @@ h1 {
                          'paragraph4 paragraph4';
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 0.01fr 0.13fr 0.26fr 0.18fr 0.18fr;
-    border: 2px solid rgb(207, 25, 119);
+    /* border: 2px solid rgb(207, 25, 119); */
     justify-items: center;
     padding-left: 2%;
     padding-right: 2%;
@@ -123,11 +129,11 @@ h1 {
                          'comLineHead comLineHead'
                          'comLineBox comLineBox';
 
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 50px 50px 165px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 0.5fr 0.5fr 2.5fr);   
     justify-items: center;
     gap: 10px;
-    border: 2px solid rgb(207, 25, 119);
+
 }
 
 
@@ -206,10 +212,7 @@ h1 {
     border: 2px solid rgb(238, 7, 7);
 } */
 
-footer,
-#email {
-    text-align: center;
-}
+
 
 
 
@@ -218,7 +221,7 @@ footer,
     display: grid;
     position: relative;
     grid-template-areas: 'cs50head cs50head'
-                         'cs50pic cs50topic'
+                         'cs50pic cs50Topic'
                          'cshead cshead' 
                          'csPic csTopic'
                          'pythonhead pythonhead'
@@ -231,11 +234,10 @@ footer,
                          'clpic clTopic'
                          'stackHead stackHead'
                          'stackPic stackTopic';
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(7, 50px 250px );
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 0.5fr 3fr);
     justify-items: center;
     gap: 10px;
-    border: 2px solid rgb(207, 25, 119);
 }
 
 .certBox {
@@ -266,8 +268,8 @@ footer,
 }
 
 
-#cs50topic {
-    grid-area: cs50topic;
+#cs50Topic {
+    grid-area: cs50Topic;
     height: 160px;
 }
 
@@ -359,4 +361,43 @@ li {
 
 article {
     width: 100%;
+}
+
+/* Contact Page */
+
+
+
+
+#email {
+    display: inline;
+    font-size: larger;
+    height: 48px;
+    padding-left: 0%;
+}
+
+#topLine {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-areas: 'emailDiv nav gitIcon';
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+
+        margin-top: 2%;
+}
+
+#emailDiv {
+    position: relative;
+    grid-area: emailDiv;
+    left: 20%;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#gitIcon {
+    position: relative;
+    grid-area: gitIcon;
+    left: 20%;
+
 }

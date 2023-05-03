@@ -1,3 +1,5 @@
+
+/* Index page */
 @media only screen and (max-width: 700px) {
     #about {
         grid-template-columns: 2fr;
@@ -25,5 +27,64 @@
         top: 0%;
         margin-top: 0%;
         margin-right: 10%;
+    }
+}
+
+/* Project page */
+@media only screen and (max-width: 700px) {
+    #project {
+        grid-template-areas: 
+                        'staticHeading'
+                        'lamboHeading' 
+                        'lamboBox' 
+                        'compWebHead'
+                        'compWebBox'
+                        'dinamicHeading'
+                        'webCompHead' 
+                        'webCompBox'
+                        'finWebHead'
+                        'finWebBox'
+                        'gameHead'
+                        'comLineHead'
+                        'comLineBox';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 0.5fr 0.5fr 1.5fr 0.5fr 1.5fr) 0.5fr 0.5fr 1.5fr;
+    }
+}
+
+/* Certificate page */
+@media only screen and (max-width: 700px) {
+    #certification {
+        grid-template-areas: 'cs50head'
+                            'cs50pic' 
+                            'cs50Topic'
+                            'cshead' 
+                            'csPic'
+                            'csTopic'
+                            'pythonhead'
+                            'pythonPic'
+                            'pythonTopic'
+                            'csshead' 
+                            'cssPic'
+                            'cssTopic'
+                            'eHackHead'
+                            'eHackPic'
+                            'eHackTopic'
+                            'clHead'
+                            'clpic'
+                            'clTopic'
+                            'stackHead'
+                            'stackPic'
+                            'stackTopic';
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 0.1fr 0.7fr 1.2fr repeat(6, 0.1fr 1fr auto); */
+        grid-template-rows: 0.1fr 0.7fr 1.7fr repeat(6, auto auto auto);
+
+        justify-items: center;
+    }
+
+    article {
+        display: grid;
+        justify-content: center;
     }
 }
