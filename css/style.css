@@ -4,6 +4,33 @@ body {
     color: #39FF14;
 }
 
+/* Navigation bar, Email, Github, linkedin */
+#topLine {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-areas: 'emailDiv nav gitIcon';
+        grid-template-columns: 1fr 3fr 0.5fr;
+
+        margin-top: 2%;
+}
+
+#emailDiv {
+    position: relative;
+    grid-area: emailDiv;
+    left: 20%;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#gitIcon {
+    position: relative;
+    grid-area: gitIcon;
+    left: 20%;
+}
+
 nav {
     position: relative;
     left: 27%;
@@ -17,7 +44,6 @@ a {
     font-size: 1.3em;
     margin-left: 5%;
     background-color: black;
-    
 }
 
 li {
@@ -29,14 +55,12 @@ li {
 #project,
 #certification {
     width: 90%;
-    left: 5%;
+    left: 3%;
     border-radius: 10%;
     position: relative;
-    z-index: -1;
     background-color: #1C658C;
-    /* background-color: #FF5733; */
     border: 5px solid #f42606;
-
+    color: white;
 }
 
 /* About Me Section  */
@@ -46,12 +70,13 @@ h1 {
     border: 5px solid #f42606;
     width: 100%;
     height: 35px;
+    color: white;
+
 }
 
 #about {
     display: grid;
     position: relative;
-    /* height: 100vh; */
     grid-template-areas: 'profileDivPic paragraph1'
                          'paragraph2 paragraph2'
                          'paragraph3 paragraph3'
@@ -207,16 +232,25 @@ h1 {
 }   
 
 
-/* Have disabled for animated profile */
-/* div {
-    border: 2px solid rgb(238, 7, 7);
-} */
+    /* Certification Page  */
+
+.certBox {
+    width: 300px;
+    height: 234px;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+                    }
 
 
-
-
-
-                    /* Certification Page  */
+#cs50pic:hover,     
+.certBox:hover{
+    transform: translatey(-10%);
+    cursor: grab;
+    border: 5px solid #f42606;
+    
+}
+                    
 #certification {
     display: grid;
     position: relative;
@@ -240,13 +274,7 @@ h1 {
     gap: 10px;
 }
 
-.certBox {
-    width: 300px;
-    height: 234px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 #cs50head {
     grid-area: cs50head;
@@ -264,9 +292,7 @@ h1 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
-
 
 #cs50Topic {
     grid-area: cs50Topic;
@@ -348,11 +374,12 @@ h1 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: absolute;
 }
 
 #stackTopic {
     grid-area: stackTopic;
+
 }
 
 li {
@@ -363,41 +390,6 @@ article {
     width: 100%;
 }
 
-/* Contact Page */
 
 
 
-
-#email {
-    display: inline;
-    font-size: larger;
-    height: 48px;
-    padding-left: 0%;
-}
-
-#topLine {
-    display: grid;
-    position: relative;
-    width: 100%;
-    grid-template-areas: 'emailDiv nav gitIcon';
-        grid-template-columns: 1fr 3fr 0.5fr;
-
-        margin-top: 2%;
-}
-
-#emailDiv {
-    position: relative;
-    grid-area: emailDiv;
-    left: 20%;
-}
-
-nav {
-    grid-area: nav;
-}
-
-#gitIcon {
-    position: relative;
-    grid-area: gitIcon;
-    left: 20%;
-
-}

@@ -17,7 +17,6 @@
 </head>
     <body class="main">
                
-
     <div id="topLine">
         <div id="emailDiv">
             <i id="emailIcon" class="material-icons" style="font-size:28px;color:red">email</i>
@@ -39,9 +38,8 @@
     <h1>Certification</h1>
     
     <section id="certification">
-       
         <H2 id="cs50head">Introduction to Computer Science</h2>
-        <div id="cs50pic"></div>
+        <div id="cs50pic" onclick="openLink(cs50)"></div>
         <article id="cs50Topic">
             <h3><strong>Sunjects Covered</strong></h3>
             <ul>
@@ -57,10 +55,11 @@
                 <li>>> Flask</li>
                 <li>>> Emoji</li>
             </ul>
+
         </article>
 
         <h2 id="cshead">Computer Science Career Path</h2>
-        <div id="csPic" class="certBox"></div>
+        <div id="csPic" class="certBox" onclick="openLink(cs)"></div>
         <article id="csTopic">
             <h3><strong>Sunjects Covered</strong></h3>
             <ul>
@@ -73,7 +72,7 @@
         </article>
 
         <h2 id="csshead">CSS</h2>
-        <div id="cssPic" class="certBox"></div>
+        <div id="cssPic" class="certBox" onclick="openLink(css)"></div>
         <article id="cssTopic">
             <h3><strong>Sunjects Covered</strong></h3>
             <ul>
@@ -87,7 +86,7 @@
         </article>
     
         <h2 id="pythonhead">Python 3</h2>
-        <div id="pythonPic" class="certBox"></div>
+        <div id="pythonPic" class="certBox" onclick="openLink(python)"></div>
         <article id="pythonTopic">
             <h3><strong>Sunjects Covered</strong></h3>
             <ul>
@@ -104,7 +103,7 @@
         </article>
 
         <h2 id="eHackHead">Introduction to Ethical Hacking</h2>
-        <div id="eHackPic" class="certBox"></div>
+        <div id="eHackPic" class="certBox" onclick="openLink(eHack)"></div>
         <article id="eHackTopic">
             <h3><strong>Sunjects Covered</strong></h3>
             <ul>
@@ -121,7 +120,7 @@
         </article>
 
         <h2 id="clHead">Command Line</h2>
-        <div id="clpic" class="certBox"></div>
+        <div id="clpic" class="certBox" onclick="openLink(cl)"></div>
         <article id="clTopic">
             <h3><strong>Sunjects Covered</strong></h3>
             <ul>
@@ -148,7 +147,7 @@
 
 </section>
 <script src="background.js"></script>
-
+<script src="linkopen.js"></script>
 </body>
 </html>
 
