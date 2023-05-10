@@ -11,8 +11,14 @@ body {
     width: 100%;
     grid-template-areas: 'emailDiv nav gitIcon';
         grid-template-columns: 1fr 3fr 0.5fr;
-
         margin-top: 2%;
+}
+
+.topLineLinks {
+    color: #39FF14;
+    font-size: 1.3em;
+    margin-left: 5%;
+    background-color: black;
 }
 
 #emailDiv {
@@ -38,13 +44,6 @@ nav {
     width: 80%;
 } 
 
-a {
-    /* color: rgb(231, 18, 18); */
-    color: #39FF14;
-    font-size: 1.3em;
-    margin-left: 5%;
-    background-color: black;
-}
 
 li {
     display: inline;
@@ -140,6 +139,53 @@ h1 {
     height: 10px;
 }
 
+#project div {
+    width: 300px;
+    height: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}   
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* transition: 200ms ease-in-out; */
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+.comLineBox:hover > .modal,
+.finWebBox:hover > .modal,
+.webCompBox:hover > .modal,
+.compWebBox:hover > .modal,
+.lamboBox:hover > .modal {
+    transform: translate(-50%, -50%) scale(1);
+    color: black;
+}
+
+button {
+    position: relative;
+    left: 33%;
+    transform: translate(-55%);
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 120px;
+}
+
+  .liIndent {
+    padding-left: 20px;
+  }
+
 #project {
     display: grid;
     position: relative;
@@ -158,7 +204,6 @@ h1 {
     grid-template-rows: repeat(3, 0.5fr 0.5fr 2.5fr);   
     justify-items: center;
     gap: 10px;
-
 }
 
 
@@ -183,7 +228,6 @@ h1 {
 .compWebBox {
     grid-area: compWebBox;
     background-image: url('../img/company_website.jpg');
-
 }
 
 .dinamicHeading {
@@ -222,16 +266,6 @@ h1 {
     position: absolute;
     bottom: 20px;
 }
-
-#project div {
-    width: 300px;
-    height: 160px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}   
-
-
     /* Certification Page  */
 
 .certBox {
@@ -241,6 +275,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
                     }
+
 
 
 #cs50pic:hover,     

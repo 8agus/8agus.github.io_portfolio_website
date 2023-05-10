@@ -1,3 +1,5 @@
+
+// Certificate page //
 const cs50 = 'https://courses.edx.org/certificates/7b3996ef89404c198fbea6896f26b744'
 const cs = 'https://www.codecademy.com/profiles/system5215535901/certificates/5b5001a11d176d7acd8b2bf8'
 const css = 'https://www.codecademy.com/profiles/system5215535901/certificates/9a5bb1fc45b4281af1fffec93b0aaf05'
