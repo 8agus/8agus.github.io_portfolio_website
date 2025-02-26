@@ -1,6 +1,5 @@
 body {
     background-color: rgb(6, 6, 6);
-    /* color: white; */
     color: #39FF14;
 }
 
@@ -76,28 +75,22 @@ h1 {
 #about {
     display: grid;
     position: relative;
-    grid-template-areas: 'profileDivPic paragraph1'
+    grid-template-areas: 'paragraph1 paragraph1'
                          'paragraph2 paragraph2'
                          'paragraph3 paragraph3'
                          'paragraph4 paragraph4';
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 0.01fr 0.13fr 0.26fr 0.18fr 0.18fr;
-    /* border: 2px solid rgb(207, 25, 119); */
     justify-items: center;
     padding-left: 2%;
     padding-right: 2%;
     margin-top: 7%;
+    /* background-image: url('../img/IMG_7212.jpg');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#profileDivPic{
-    width: auto;
-    height: 150px;
-    position: absolute;   
-    left: 10%;
-    top: -80%;
-    z-index: auto;
-    margin-top: 15%;
-}
 
 #profileImg {
     max-width: 100%;
