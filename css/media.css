@@ -1,6 +1,23 @@
 
 /* Index page */
 @media only screen and (max-width: 1074px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1em;
+    }
+    
+    .section-heading {
+        font-size: 1.8em;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     #profileDivPic {
         width: 220px;
         height: 220px;
@@ -13,10 +30,54 @@
     #paragraph4 {
         font-size: 1em;
     }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-    #about {
+    #topLine {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'nav'
+                             'emailDiv'
+                             'socialIcons';
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+    
+    #emailDiv {
+        justify-content: center;
+    }
+    
+    #socialIcons {
+        justify-content: center;
+    }
+    
+    .hero-title {
+        font-size: 2em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1em;
+    }
+    
+    .section-heading {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    
+    #hero {
+        padding: 50px 15px 40px;
+    }
+
+    #about, #skills {
         padding: 5%;
     }
 
@@ -28,12 +89,47 @@
         display: block;
     }
     
-    #paragraph1,
-    #paragraph2,
-    #paragraph3,
-    #paragraph4 {
-        text-align: left;
-        font-size: 0.95em;
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-highlight {
+        padding: 20px;
+    }
+    
+    .about-highlight h3 {
+        font-size: 1.2em;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-category h3 {
+        text-align: center;
+    }
+    
+    .skill-tags {
+        justify-content: center;
+    }
+    
+    #contact {
+        padding: 30px 20px;
+    }
+    
+    .contact-intro {
+        font-size: 1em;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
     }
 }
 
@@ -54,44 +150,101 @@
                         'gameHead'
                         'comLineHead'
                         'comLineBox';
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 0.5fr 0.5fr 1.5fr 0.5fr 1.5fr) 0.5fr 0.5fr 1.5fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 0.5fr 0.5fr 1.5fr 0.5fr 1.5fr) 0.5fr 0.5fr 1.5fr;
+        padding: 20px 10px;
+    }
+    
+    .modal {
+        top: 3vh;
+        width: 95%;
+        max-height: 94vh;
+        font-size: 0.95em;
+    }
+    
+    .modal::before {
+        font-size: 1em;
+        margin-bottom: 15px;
+        padding: 20px 50px 10px 20px;
+    }
+    
+    .modal-close {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        top: 12px;
+        right: 15px;
+    }
+    
+    .modal p {
+        font-size: 0.95em;
+        margin: 0 20px 15px 20px;
+    }
+    
+    .modal ol {
+        margin: 0 20px 20px 45px;
+    }
+    
+    .modal h3 {
+        margin: 0 20px 15px 20px;
+    }
+    
+    button {
+        width: calc(100% - 40px);
+        margin: 25px 20px 10px 20px;
+        padding: 14px 25px;
+    }
+    
+    button:last-of-type {
+        margin-bottom: 30px;
     }
 }
 
 /* Certificate page */
+@media only screen and (max-width: 1074px) {
+    #certification {
+        padding: 30px 20px;
+    }
+    
+    .cert-card {
+        flex-direction: column;
+        padding: 25px;
+    }
+    
+    .cert-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    #certification ul.two-column {
+        column-count: 1;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     #certification {
-        grid-template-areas: 'cs50head'
-                            'cs50pic' 
-                            'cs50Topic'
-                            'cshead' 
-                            'csPic'
-                            'csTopic'
-                            'pythonhead'
-                            'pythonPic'
-                            'pythonTopic'
-                            'csshead' 
-                            'cssPic'
-                            'cssTopic'
-                            'eHackHead'
-                            'eHackPic'
-                            'eHackTopic'
-                            'clHead'
-                            'clpic'
-                            'clTopic'
-                            'stackHead'
-                            'stackPic'
-                            'stackTopic';
-        grid-template-columns: 1fr;
-        /* grid-template-rows: 0.1fr 0.7fr 1.2fr repeat(6, 0.1fr 1fr auto); */
-        grid-template-rows: 0.1fr 0.7fr 1.7fr repeat(6, auto auto auto);
-
-        justify-items: center;
+        padding: 20px 15px;
+        gap: 30px;
     }
-
-    article {
-        display: grid;
-        justify-content: center;
+    
+    .cert-card {
+        padding: 20px;
+    }
+    
+    .cert-image {
+        height: 180px;
+    }
+    
+    #certification h2 {
+        font-size: 1.5em;
+    }
+    
+    #certification h3 {
+        font-size: 1.1em;
+    }
+    
+    #certification li {
+        font-size: 0.9em;
     }
 }

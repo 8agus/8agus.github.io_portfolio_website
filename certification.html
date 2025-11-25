@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional certifications in Computer Science, Python, CSS, Ethical Hacking, and Full Stack Development from Harvard, Codecademy, and more.">
     
     <!-- Link to Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <title>Certification</title>
+    <title>Certifications | Christiaan Nel - Full Stack Developer</title>
 </head>
     <body class="main">
                
@@ -35,102 +39,119 @@
     
     </div>
 
-    <h1>Certification</h1>
+    <h2 class="section-heading">Professional Certifications</h2>
     
     <section id="certification">
-        <H2 id="cs50head">Introduction to Computer Science</h2>
-        <div id="cs50pic" onclick="openLink(cs50)"></div>
-        <article id="cs50Topic">
-            <h3><strong>Subjects Covered</strong></h3>
-            <ul>
-                <li>>> Scratch</li>
-                <li>>> C</li>
-                <li>>> Arrays</li>
-                <li>>> Algorithms</li>
-                <li>>> Memory</li>
-                <li>>> Data Structures</li>
-                <li>>> Python</li>
-                <li>>> SQL</li>
-                <li>>> HTML, CSS, JavaScript</li>
-                <li>>> Flask</li>
-                <li>>> Emoji</li>
-            </ul>
+        
+        <!-- CS50 Certificate -->
+        <div class="cert-card">
+            <div class="cert-image" id="cs50pic" onclick="openLink(cs50)"></div>
+            <div class="cert-content">
+                <h2>Introduction to Computer Science</h2>
+                <h3>Subjects Covered</h3>
+                <ul class="two-column">
+                    <li>Scratch</li>
+                    <li>C</li>
+                    <li>Arrays</li>
+                    <li>Algorithms</li>
+                    <li>Memory</li>
+                    <li>Data Structures</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Flask</li>
+                    <li>Emoji</li>
+                </ul>
+            </div>
+        </div>
 
-        </article>
+        <!-- Computer Science Career Path Certificate -->
+        <div class="cert-card">
+            <div class="cert-image certBox" id="csPic" onclick="openLink(cs)"></div>
+            <div class="cert-content">
+                <h2>Computer Science Career Path</h2>
+                <h3>Subjects Covered</h3>
+                <ul>
+                    <li>CS101: Introduction to Programming</li>
+                    <li>CS102: Data Structures & Algorithms</li>
+                    <li>CS103: Databases</li>
+                    <li>CS104: Computer Architecture</li>
+                    <li>CS105: Discrete Math</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2 id="cshead">Computer Science Career Path</h2>
-        <div id="csPic" class="certBox" onclick="openLink(cs)"></div>
-        <article id="csTopic">
-            <h3><strong>Sunjects Covered</strong></h3>
-            <ul>
-                <li>>> CS101: Introduction to Programming</li>
-                <li>>> CS102: Data Structures & Algorithms</li>
-                <li>>> CS103: Databases</li>
-                <li>>> CS104: Computer Architecture</li>
-                <li>>> CS105: Discrete Math</li>
-            </ul>
-        </article>
+        <!-- Python Certificate -->
+        <div class="cert-card">
+            <div class="cert-image certBox" id="pythonPic" onclick="openLink(python)"></div>
+            <div class="cert-content">
+                <h2>Python 3</h2>
+                <h3>Subjects Covered</h3>
+                <ul class="two-column">
+                    <li>Control Flow</li>
+                    <li>Lists</li>
+                    <li>Loops</li>
+                    <li>Functions</li>
+                    <li>Strings</li>
+                    <li>Modules</li>
+                    <li>Dictionaries</li>
+                    <li>Files</li>
+                    <li>Classes</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2 id="csshead">CSS</h2>
-        <div id="cssPic" class="certBox" onclick="openLink(css)"></div>
-        <article id="cssTopic">
-            <h3><strong>Sunjects Covered</strong></h3>
-            <ul>
-                <li>>> Syntax and Selectors</li>
-                <li>>> Visual Rules</li>
-                <li>>> The Box Model</li>
-                <li>>> Display and Positioning</li>
-                <li>>> Colors</li>
-                <li>>> Typography</li>
-            </ul>
-        </article>
-    
-        <h2 id="pythonhead">Python 3</h2>
-        <div id="pythonPic" class="certBox" onclick="openLink(python)"></div>
-        <article id="pythonTopic">
-            <h3><strong>Subjects Covered</strong></h3>
-            <ul>
-                <li>>> Constrol Flow</li>
-                <li>>> Lists</li>
-                <li>>> Loops</li>
-                <li>>> Functions</li>
-                <li>>> Strings</li>
-                <li>>> Modules</li>
-                <li>>> Dictionaries</li>
-                <li>>> Files</li>
-                <li>>> Classes</li>
-            </ul>
-        </article>
+        <!-- CSS Certificate -->
+        <div class="cert-card">
+            <div class="cert-image certBox" id="cssPic" onclick="openLink(css)"></div>
+            <div class="cert-content">
+                <h2>CSS</h2>
+                <h3>Subjects Covered</h3>
+                <ul>
+                    <li>Syntax and Selectors</li>
+                    <li>Visual Rules</li>
+                    <li>The Box Model</li>
+                    <li>Display and Positioning</li>
+                    <li>Colors</li>
+                    <li>Typography</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2 id="eHackHead">Introduction to Ethical Hacking</h2>
-        <div id="eHackPic" class="certBox" onclick="openLink(eHack)"></div>
-        <article id="eHackTopic">
-            <h3><strong>Subjects Covered</strong></h3>
-            <ul>
-                <li>>> What is Ethical Hacking</li>
-                <li>>> Introduction to Bug Hunting</li>
-                <li>>> Network Enumeration Demo</li>
-                <li>>> Vulnerability Analysis & Epliotation Demo</li>
-                <li>>> Packet Sniffing Demo</li>
-                <li>>> Cryptography For Ethical Hackers</li>
-                <li>>> Evading Defensive Measures</li>
-                <li>>> Evading & Computing</li>
-                <li>>> Computer Fraud & Abuse Act</li>
-            </ul>
-        </article>
+        <!-- Ethical Hacking Certificate -->
+        <div class="cert-card">
+            <div class="cert-image certBox" id="eHackPic" onclick="openLink(eHack)"></div>
+            <div class="cert-content">
+                <h2>Introduction to Ethical Hacking</h2>
+                <h3>Subjects Covered</h3>
+                <ul class="two-column">
+                    <li>What is Ethical Hacking</li>
+                    <li>Introduction to Bug Hunting</li>
+                    <li>Network Enumeration Demo</li>
+                    <li>Vulnerability Analysis & Exploitation Demo</li>
+                    <li>Packet Sniffing Demo</li>
+                    <li>Cryptography For Ethical Hackers</li>
+                    <li>Evading Defensive Measures</li>
+                    <li>Evading & Computing</li>
+                    <li>Computer Fraud & Abuse Act</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2 id="clHead">Command Line</h2>
-        <div id="clpic" class="certBox" onclick="openLink(cl)"></div>
-        <article id="clTopic">
-            <h3><strong>Subjects Covered</strong></h3>
-            <ul>
-                <li>>> Configuring the Enviroment</li>
-                <li>>> Navigating the File System</li>
-                <li>>> Viewing & Changing the File System</li>
-                <li>>> Redirecting Input & Output</li>
-            </ul>
-
-        </article>
+        <!-- Command Line Certificate -->
+        <div class="cert-card">
+            <div class="cert-image certBox" id="clpic" onclick="openLink(cl)"></div>
+            <div class="cert-content">
+                <h2>Command Line</h2>
+                <h3>Subjects Covered</h3>
+                <ul>
+                    <li>Configuring the Environment</li>
+                    <li>Navigating the File System</li>
+                    <li>Viewing & Changing the File System</li>
+                    <li>Redirecting Input & Output</li>
+                </ul>
+            </div>
+        </div>
 
 </section>
 <script src="background.js"></script>
