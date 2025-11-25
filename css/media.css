@@ -1,32 +1,39 @@
 
 /* Index page */
-@media only screen and (max-width: 700px) {
-    #about {
-        grid-template-columns: 2fr;
-        grid-template-rows: 0.01fr 0.13fr 0.26fr 0.18fr 0.18fr;
-        grid-template-areas: 'profileDivPic'
-                            'paragraph1'
-                            'paragraph2'
-                            'paragraph3'
-                            'paragraph4'
-                            'paragraph5';
-    }
-
+@media only screen and (max-width: 1074px) {
     #profileDivPic {
-        position: relative;
-        left: 0%;
-        top: 0%;
-        margin-top: 0%;
+        width: 220px;
+        height: 220px;
+        margin: 0 30px 15px 0;
+    }
+    
+    #paragraph1,
+    #paragraph2,
+    #paragraph3,
+    #paragraph4 {
+        font-size: 1em;
     }
 }
 
-@media only screen and (max-width: 1074px) {
+@media only screen and (max-width: 700px) {
+    #about {
+        padding: 5%;
+    }
+
     #profileDivPic {
-        position: relative;
-        left: 0%;
-        top: 0%;
-        margin-top: 0%;
-        margin-right: 10%;
+        float: none;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 25px auto;
+        display: block;
+    }
+    
+    #paragraph1,
+    #paragraph2,
+    #paragraph3,
+    #paragraph4 {
+        text-align: left;
+        font-size: 0.95em;
     }
 }
 
