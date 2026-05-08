@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.className = 'modal-overlay';
     document.body.appendChild(overlay);
     
-    // Get all project boxes
-    const projectBoxes = document.querySelectorAll('.lamboBox, .compWebBox, .webCompBox, .finWebBox, .comLineBox');
+    // Generic selector — any future .project-card is automatically supported
+    const projectCards = document.querySelectorAll('.project-card');
     
-    projectBoxes.forEach(box => {
-        const modal = box.querySelector('.modal');
+    projectCards.forEach(card => {
+        const modal = card.querySelector('.modal');
         
         if (modal) {
             // Create close button
@@ -19,10 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             closeBtn.setAttribute('aria-label', 'Close modal');
             modal.appendChild(closeBtn);
             
-            // Open modal on click
-            box.addEventListener('click', function(e) {
-                // Don't open if already open or if clicking inside modal
-                if (modal.classList.contains('active') || box.classList.contains('modal-open')) {
+            // Open modal on card click
+            card.addEventListener('click', function(e) {
+                if (modal.classList.contains('active') || card.classList.contains('modal-open')) {
                     e.stopPropagation();
                     e.preventDefault();
                     return;
@@ -31,26 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 modal.classList.add('active');
                 overlay.classList.add('active');
-                box.classList.add('modal-open'); // Mark box as having open modal
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                card.classList.add('modal-open');
+                document.body.style.overflow = 'hidden';
             });
             
             // Close modal on close button click
             closeBtn.addEventListener('click', function(e) {
                 e.stopPropagation();
                 e.preventDefault();
-                modal.classList.remove('active');
-                overlay.classList.remove('active');
-                box.classList.remove('modal-open'); // Remove modal-open class
-                document.body.style.overflow = ''; // Restore scrolling
+                closeModal(modal, card);
             });
             
-            // Prevent modal content clicks from closing or triggering box click
+            // Prevent modal content clicks from bubbling to card
             modal.addEventListener('click', function(e) {
                 e.stopPropagation();
             });
             
-            // Prevent links inside modal from being blocked
+            // Allow links and buttons inside modal to work
             const modalLinks = modal.querySelectorAll('a, button');
             modalLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
@@ -63,12 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close modal when clicking overlay
     overlay.addEventListener('click', function() {
         const activeModal = document.querySelector('.modal.active');
+        const activeCard = document.querySelector('.project-card.modal-open');
         if (activeModal) {
-            activeModal.classList.remove('active');
-            overlay.classList.remove('active');
-            // Remove modal-open from all boxes
-            projectBoxes.forEach(box => box.classList.remove('modal-open'));
-            document.body.style.overflow = '';
+            closeModal(activeModal, activeCard);
         }
     });
     
@@ -76,13 +69,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             const activeModal = document.querySelector('.modal.active');
+            const activeCard = document.querySelector('.project-card.modal-open');
             if (activeModal) {
-                activeModal.classList.remove('active');
-                overlay.classList.remove('active');
-                // Remove modal-open from all boxes
-                projectBoxes.forEach(box => box.classList.remove('modal-open'));
-                document.body.style.overflow = '';
+                closeModal(activeModal, activeCard);
             }
         }
     });
+    
+    function closeModal(modal, card) {
+        modal.classList.remove('active');
+        overlay.classList.remove('active');
+        if (card) {
+            card.classList.remove('modal-open');
+        }
+        document.body.style.overflow = '';
+    }
 });

@@ -134,25 +134,44 @@
 }
 
 /* Project page */
+@media only screen and (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .project-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media only screen and (max-width: 700px) {
     #project {
-        grid-template-areas: 
-                        'staticHeading'
-                        'lamboHeading' 
-                        'lamboBox' 
-                        'compWebHead'
-                        'compWebBox'
-                        'dinamicHeading'
-                        'webCompHead' 
-                        'webCompBox'
-                        'finWebHead'
-                        'finWebBox'
-                        'gameHead'
-                        'comLineHead'
-                        'comLineBox';
+        padding: 20px 15px;
+    }
+
+    .project-category {
+        margin-bottom: 40px;
+    }
+
+    .project-category-heading {
+        font-size: 1.3em;
+    }
+
+    .project-category.featured .project-category-heading {
+        font-size: 1.5em;
+    }
+
+    .project-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 0.5fr 0.5fr 1.5fr 0.5fr 1.5fr) 0.5fr 0.5fr 1.5fr;
-        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .project-image {
+        height: 110px;
+    }
+
+    .project-content {
+        padding: 15px;
     }
     
     .modal {
@@ -197,6 +216,22 @@
     
     button:last-of-type {
         margin-bottom: 30px;
+    }
+
+    .project-links {
+        grid-template-columns: 1fr;
+        width: calc(100% - 40px);
+        margin: 20px 20px 28px 20px;
+    }
+
+    .project-links button,
+    .project-links .project-link-disabled {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project-links button > a {
+        padding: 0 14px;
     }
 }
 

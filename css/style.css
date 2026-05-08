@@ -291,7 +291,9 @@ h1 {
 }
 
 
-                /* Project Section */
+                /* =============================================
+   PROJECT SECTION
+   ============================================= */
 #project h1 {
     background-color: #1C658C;
     text-align: center;
@@ -317,77 +319,299 @@ h1 {
     margin-bottom: 10px;
 }
 
-#project div {
+/* Project section container */
+#project {
+    padding: 25px 25px;
+}
+
+/* Category sections */
+.project-category {
+    margin-bottom: 35px;
+}
+
+.project-category-heading {
+    color: rgba(57, 255, 20, 0.85);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(57, 255, 20, 0.2);
+}
+
+/* Featured section heading gets extra emphasis */
+.project-category.featured .project-category-heading {
+    font-size: 1.5em;
+    color: #e8f4f8;
+    text-shadow: none;
+    border-bottom-color: rgba(100, 160, 200, 0.3);
+}
+
+/* Learning section heading is visually de-emphasised */
+.project-category-heading--learning {
+    font-size: 1.1em;
+    color: rgba(57, 255, 20, 0.55);
+    letter-spacing: 1px;
+}
+
+/* Auto-fit responsive grid — no hardcoded positions */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 16px;
+}
+
+/* Project card */
+.project-card {
+    background: rgba(10, 18, 30, 0.55);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(100, 160, 200, 0.35);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Featured cards get a subtle accent */
+.project-category.featured .project-card {
+    border-color: rgba(57, 255, 20, 0.1);
+}
+
+.project-category.featured .project-card:hover {
+    border-color: rgba(57, 255, 20, 0.3);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Disable hover when modal is open */
+.project-card.modal-open {
+    pointer-events: none;
+    transform: none;
+    cursor: default;
+}
+
+/* Project image thumbnail */
+.project-image {
     width: 100%;
-    max-width: 350px;
-    height: 200px;
+    height: 130px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
     position: relative;
-    overflow: visible;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
 }
 
-#project div::before {
-    content: "👆";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.5em;
-    opacity: 0.8;
-    animation: bounce 2s infinite;
-    pointer-events: none;
-    z-index: 10;
+/* Gradient placeholders for professional projects without images yet */
+.project-image--placeholder {
+    background-color: #0d3347;
 }
 
-#project div::after {
-    content: "Click to view details";
+.project-image--saffas {
+    background: linear-gradient(135deg, #1a5276 0%, #0d3347 50%, #1C658C 100%);
+}
+
+.project-image--governance {
+    background: linear-gradient(135deg, #1a2a40 0%, #0d2137 50%, #1a3550 100%);
+}
+
+.project-image--guesthouse {
+    background: linear-gradient(135deg, #1a3a1a 0%, #0d2b0d 50%, #1a4a1a 100%);
+}
+
+.project-image--certificate {
+    background: linear-gradient(135deg, #3a2a0a 0%, #2b1e07 50%, #4a3510 100%);
+}
+
+.project-image--invoice {
+    background: linear-gradient(135deg, #2a1a3a 0%, #1e0d2b 50%, #351a4a 100%);
+}
+
+/* Click indicator — shown on hover only, no bouncing emoji */
+.project-image::before {
+    display: none;
+}
+
+.project-image::after {
+    content: "View Details";
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(244, 38, 6, 0.95);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 25px;
-    font-size: 0.9em;
+    background: rgba(28, 101, 140, 0.88);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75em;
     font-weight: 600;
-    opacity: 0.85;
-    transition: all 0.3s ease;
-    pointer-events: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-#project div:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(244, 38, 6, 0.4);
-}
-
-#project div:hover::before {
     opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
 }
 
-#project div:hover::after {
+.project-card:hover .project-image::after {
     opacity: 1;
-    transform: translateX(-50%) scale(1.05);
-    background: rgba(244, 38, 6, 1);
 }
 
-/* Disable hover effects when modal is active */
-#project div.modal-open {
-    pointer-events: none !important;
-    transform: none !important;
-    cursor: default !important;
+.project-card.modal-open .project-image::before,
+.project-card.modal-open .project-image::after {
+    display: none;
 }
 
-#project div.modal-open::before,
-#project div.modal-open::after {
-    display: none !important;
-    opacity: 0 !important;
+/* Project card content area */
+.project-content {
+    padding: 13px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+}
+
+.project-content h3 {
+    color: #ddeef5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.98em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-summary {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.82em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Project tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.project-tag {
+    background: rgba(28, 101, 140, 0.2);
+    color: rgba(160, 210, 230, 0.85);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.7em;
+    font-weight: 500;
+    border: 1px solid rgba(100, 160, 200, 0.18);
+}
+
+/* Project links inside modal */
+.project-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: stretch;
+    width: calc(100% - 80px);
+    margin: 24px 40px 32px 40px;
+    box-sizing: border-box;
+}
+
+.project-link-disabled {
+    background: linear-gradient(135deg, rgba(28, 101, 140, 0.18) 0%, rgba(18, 70, 100, 0.14) 100%);
+    color: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(100, 160, 200, 0.2);
+    box-shadow: none;
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+}
+
+.project-link-disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* === Shared: every action cell fills its grid column exactly === */
+.project-links button,
+.project-links .project-link-disabled {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 18px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.2;
+    border-radius: 12px;
+    font-size: 0.93em;
+    font-weight: 600;
+}
+
+/* Active button: keep red-gradient style but fill the cell */
+.project-links button {
+    box-shadow: 0 4px 14px rgba(244, 38, 6, 0.25);
+}
+
+.project-links button:last-of-type {
+    margin-bottom: 0;
+}
+
+/* The anchor inside a button must fill the button */
+.project-links button > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 52px;
+    padding: 0 18px;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    line-height: 1.2;
+    white-space: normal;
+    text-align: center;
+}
+
+/* =============================================
+   PROJECT PAGE — scoped overrides
+   Activated by body.project-page (set in project.html)
+   ============================================= */
+
+/* Replace matrix background with subtle professional dark grid */
+body.project-page {
+    background-color: #09111d;
+    background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(28, 101, 140, 0.14) 0%, transparent 55%),
+        linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px);
+    background-size: 100% 100%, 50px 50px, 50px 50px;
+}
+
+/* Soften the heavy blue panel + red border on the projects container */
+body.project-page #project {
+    background-color: rgba(9, 20, 36, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Compact the "My Projects" banner heading */
+body.project-page .section-heading {
+    margin: 18px auto 16px;
+    padding: 11px 20px;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(100, 160, 200, 0.35);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, rgba(28, 101, 140, 0.75) 0%, rgba(18, 70, 100, 0.65) 100%);
 }
 
 /* Bounce animation for click indicator */
@@ -396,22 +620,11 @@ h1 {
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
     60% {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
-}
-
-#project div.modal-open:hover {
-    transform: none !important;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3) !important;
-}
-
-#project div.modal-open::after,
-#project div.modal-open:hover::after {
-    display: none !important;
-    opacity: 0 !important;
 }
 
 .modal {
@@ -529,15 +742,28 @@ h1 {
     font-size: 1em;
 }
 
-.modal ol {
+.modal ol,
+.modal ul {
     color: #333;
-    margin: 0 40px 25px 65px;
+    margin: 0 40px 20px 58px;
+    padding-left: 0;
+    list-style-position: outside;
+    list-style-type: disc;
 }
 
 .modal li {
-    margin-bottom: 12px;
-    line-height: 1.7;
+    display: list-item;
+    margin-bottom: 6px;
+    line-height: 1.5;
     color: #444;
+}
+
+.modal li::marker {
+    color: rgba(100, 160, 200, 0.8);
+}
+
+.modal li:last-child {
+    margin-bottom: 0;
 }
 
 .modal h3 {
@@ -585,87 +811,6 @@ button a {
     padding-left: 20px;
 }
 
-#project {
-    display: grid;
-    position: relative;
-    grid-template-areas: 
-                         'staticHeading staticHeading'
-                         'lamboHeading compWebHead'
-                         'lamboBox compWebBox'
-                         'dinamicHeading dinamicHeading'
-                         'webCompHead finWebHead'
-                         'webCompBox finWebBox'
-                         'gameHead gameHead'
-                         'comLineHead comLineHead'
-                         'comLineBox comLineBox';
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;   
-    justify-items: center;
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-
-.staticHeading {
-    grid-area: staticHeading;
-}
-
-.lamboHeading {
-    grid-area: lamboHeading;
-}
-
-.compWebHead {
-    grid-area: compWebHead;
-}
-
-.lamboBox {
-    grid-area: lamboBox;
-    background-image: url('../img/lambo.jpg');
-
-}   
-
-.compWebBox {
-    grid-area: compWebBox;
-    background-image: url('../img/company_website.jpg');
-}
-
-.dinamicHeading {
-    grid-area: dinamicHeading;
-}
-
-.webCompHead {
-    grid-area: webCompHead;
-} 
-
-.finWebHead {
-    grid-area: finWebHead;
-}
-
-.webCompBox {
-    grid-area: webCompBox;
-    background-image: url('../img/Web\ Base\ Banking\ tool\ .jpg');
-} 
-
-.finWebBox {
-    grid-area: finWebBox;
-    background-image: url('../img/finance.jpg');
-} 
-
-.gameHead {
-    grid-area: gameHead;
-}
-
-.comLineHead {
-    grid-area: comLineHead;
-}
-
-.comLineBox {
-    grid-area: comLineBox;
-    background-image: url('../img/tictactoe.jpg');
-    position: absolute;
-    bottom: 20px;
-}
     /* Certification Page  */
 
 #certification {
@@ -873,6 +1018,202 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.95em;
+}
+
+/* =============================================
+   HOME PAGE — scoped overrides
+   Activated by body.home-page (set in index.html)
+
+   CERTIFICATION PAGE — scoped overrides
+   Activated by body.certification-page (set in certification.html)
+   ============================================= */
+
+/* Shared: subtle professional dark background (matches Projects page) */
+body.home-page,
+body.certification-page {
+    background-color: #09111d;
+    background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(28, 101, 140, 0.14) 0%, transparent 55%),
+        linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px);
+    background-size: 100% 100%, 50px 50px, 50px 50px;
+}
+
+/* Shared: soften nav red bottom border */
+body.home-page #topLine,
+body.certification-page #topLine {
+    border-bottom: 1px solid rgba(100, 160, 200, 0.2);
+}
+
+/* Shared: reduce section heading scale, soften border, remove red */
+body.home-page .section-heading,
+body.certification-page .section-heading {
+    margin: 20px auto 18px;
+    padding: 12px 20px;
+    font-size: 1.7em;
+    border: 1px solid rgba(100, 160, 200, 0.35);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, rgba(28, 101, 140, 0.75) 0%, rgba(18, 70, 100, 0.65) 100%);
+}
+
+/* Shared: soften footer red border */
+body.home-page footer,
+body.certification-page footer {
+    border-top: 1px solid rgba(100, 160, 200, 0.15);
+    margin-top: 30px;
+}
+
+/* Shared: soften social icon hover glow (remove red drop-shadow) */
+body.home-page .social-link:hover,
+body.certification-page .social-link:hover {
+    filter: drop-shadow(0 5px 12px rgba(100, 160, 200, 0.4));
+}
+
+/* ==========  HOME PAGE SPECIFIC  ========== */
+
+/* Hero title: remove red neon text-shadow, reduce size */
+body.home-page .hero-title {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid rgba(100, 160, 200, 0.38);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(20, 42, 68, 0.6) 0%, rgba(9, 20, 36, 0.5) 100%);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    font-size: 2.5em;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+    margin-bottom: 10px;
+}
+
+/* Hero subtitle: muted teal — no neon green */
+body.home-page .hero-subtitle {
+    color: rgba(120, 195, 215, 0.8);
+}
+
+/* Hero section: reduce height, bring About Me closer */
+body.home-page #hero {
+    padding: 34px 20px 24px;
+    margin-top: 8px;
+}
+
+/* About and Skills panels: dark transparent, thin neutral border */
+body.home-page #about,
+body.home-page #skills {
+    background-color: rgba(9, 20, 36, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+}
+
+/* Profile photo: steel-blue ring instead of neon green + red double ring */
+body.home-page #profileImg {
+    border-color: rgba(100, 160, 200, 0.55);
+    box-shadow:
+        0 0 0 2px rgba(28, 101, 140, 0.3),
+        0 0 18px rgba(28, 101, 140, 0.2);
+}
+
+body.home-page #profileImg:hover {
+    border-color: rgba(100, 180, 220, 0.8);
+    transform: scale(1.05);
+    box-shadow:
+        0 0 0 2px rgba(28, 101, 140, 0.5),
+        0 0 28px rgba(28, 101, 140, 0.35),
+        0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.home-page #profileDivPic {
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+}
+
+/* About highlight cards: steel-blue left border, softer hover */
+body.home-page .about-highlight {
+    border-left-color: rgba(100, 160, 200, 0.45);
+    border-radius: 10px;
+}
+
+body.home-page .about-highlight:hover {
+    border-left-color: rgba(100, 160, 200, 0.75);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* About highlight headings: near-white instead of neon green */
+body.home-page .about-highlight h3 {
+    color: #ddeef5;
+}
+
+/* Skill category headings: muted blue-grey instead of neon green */
+body.home-page .skill-category h3 {
+    color: rgba(100, 200, 230, 0.85);
+}
+
+/* Skill tags: blue-grey border/background instead of green neon */
+body.home-page .skill-tag {
+    border-color: rgba(100, 160, 200, 0.28);
+    background: linear-gradient(135deg, rgba(28, 101, 140, 0.22) 0%, rgba(28, 101, 140, 0.14) 100%);
+}
+
+body.home-page .skill-tag:hover {
+    border-color: rgba(100, 160, 200, 0.55);
+    box-shadow: 0 4px 12px rgba(28, 101, 140, 0.28);
+    background: linear-gradient(135deg, rgba(28, 101, 140, 0.32) 0%, rgba(28, 101, 140, 0.22) 100%);
+    transform: translateY(-2px);
+}
+
+/* Contact buttons: steel-blue instead of red gradient */
+body.home-page .contact-btn {
+    background: linear-gradient(135deg, rgba(28, 101, 140, 0.9) 0%, rgba(18, 70, 105, 0.85) 100%);
+    box-shadow: 0 4px 16px rgba(28, 101, 140, 0.35);
+}
+
+body.home-page .contact-btn:hover {
+    background: linear-gradient(135deg, rgba(40, 120, 165, 0.95) 0%, rgba(28, 101, 140, 0.9) 100%);
+    box-shadow: 0 7px 24px rgba(28, 101, 140, 0.5);
+    transform: translateY(-3px);
+}
+
+/* ==========  CERTIFICATION PAGE SPECIFIC  ========== */
+
+/* Certification panel: dark transparent, thin neutral border */
+body.certification-page #certification {
+    background-color: rgba(9, 20, 36, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+/* Cert cards: clearly distinct from dark panel — lighter bg, visible border, soft shadow */
+body.certification-page .cert-card {
+    background: rgba(20, 42, 68, 0.75);
+    border: 1px solid rgba(100, 160, 200, 0.22);
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+body.certification-page .cert-card:hover {
+    border-color: rgba(100, 160, 200, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Cert image: steel-blue border instead of red glow on hover */
+body.certification-page .cert-image:hover {
+    border: 1px solid rgba(100, 160, 200, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+}
+
+/* Cert card title: near-white instead of neon green */
+body.certification-page #certification h2 {
+    color: #ddeef5;
+}
+
+/* Cert list bullets: steel-blue instead of red */
+body.certification-page #certification li::before {
+    color: rgba(100, 160, 200, 0.7);
 }
 
 

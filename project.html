@@ -8,7 +8,6 @@
     
     <!-- Link to Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +19,7 @@
 
     <title>Projects | Christiaan Nel - Full Stack Developer</title>
 </head>
-<body class="main">
+<body class="main project-page">
 
     <!-- Navigation barr -->
     <div id="topLine">
@@ -43,117 +42,345 @@
 <h2 class="section-heading">My Projects</h2>
 <section id="project">
 
-<!-- Static Websites  -->
-<h2 class="staticHeading">Front-End Websites</h2>
+    <!-- =============================================
+         FEATURED PROFESSIONAL PROJECTS
+         ============================================= -->
+    <div class="project-category featured">
+        <h2 class="project-category-heading">Featured Professional Projects</h2>
+        <div class="project-grid">
 
-<h3 class="lamboHeading">Lamborghini Website</h3>
-<div class="lamboBox" >
-    <span class="modal">
-        <p>The website showcases a Lamborghini design website. The website uses several features and development skills to create a visually appealing and responsive website. Here are some of the main features and skills used in its development:</p>
-        <ol>
-            <li>1. HTML: The website uses HTML to create the structure of the page, including the header, navigation, and content sections.</li>
-            <li>2. CSS: The website uses CSS to add styling and visual effects to the HTML elements, such as font styles, colors, and layout.</li>
-            <li>3.	Responsive Design: The website is designed to be responsive, meaning it adjusts its layout and content to fit the screen size of different devices, such as desktops, laptops, tablets, and mobile phones.</li>
-            <li>4.	Bootstrap Framework: The website uses the Bootstrap framework, a popular HTML, CSS, and JavaScript framework, to help with the responsive design and layout of the website.</li>
-            <li>5.	JavaScript: The website uses JavaScript to add interactivity and dynamic effects, such as smooth scrolling and a lightbox gallery for the images.</li>
-        </ol>
-        <p>Overall, the website demonstrates a good use of HTML, CSS, JavaScript, and the Bootstrap framework to create a visually appealing and responsive website showcasing Lamborghinis.</p>
-        <button><a class="projectLinks" href="https://8agus.github.io/8agus.github.io-lamborghini/" target="_blank">Link to website</a></button>
-        <button><a class="projectLinks" href="https://github.com/8agus/8agus.github.io-lamborghini" target="_blank">Link to code</a></button>
+            <!-- 1. Saffas AE Connect -->
+            <div class="project-card">
+                <div class="project-image project-image--placeholder project-image--saffas"></div>
+                <div class="project-content">
+                    <h3>Saffas AE Connect</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Full Stack</span>
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Prisma</span>
+                    </div>
+                    <p class="project-summary">Community directory and professional networking platform for South Africans living and working in the UAE. Built for real users, running in production.</p>
+                </div>
+                <span class="modal">
+                    <p><strong>Saffas AE Connect</strong> is a full stack community platform serving South Africans in the UAE. It provides a professional directory, job board, and networking hub, built entirely by one developer from concept to production deployment.</p>
+                    <h3>Key Features</h3>
+                    <ol>
+                        <li>User registration, authentication, and profile management</li>
+                        <li>Professional directory with search and filtering</li>
+                        <li>Job listings board for community members</li>
+                        <li>Business directory for SA-owned businesses in the UAE</li>
+                        <li>Admin dashboard for content moderation and analytics</li>
+                        <li>Email notification system for platform events</li>
+                        <li>Fully responsive mobile-first design</li>
+                    </ol>
+                    <h3>Tech Stack</h3>
+                    <p>Next.js 14, TypeScript, PostgreSQL, Prisma ORM, NextAuth.js, deployed on a production hosting environment.</p>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://www.saffas.ae" target="_blank" rel="noopener noreferrer">Live Site</a></button>
+                        <span class="project-link-disabled">Code available on request</span>
+                        <span class="project-link-disabled">Demo video planned</span>
+                    </div>
+                </span>
+            </div>
 
-    </span>
+            <!-- 2. Enterprise AI Governance Copilot -->
+            <div class="project-card">
+                <div class="project-image project-image--placeholder project-image--governance"></div>
+                <div class="project-content">
+                    <h3>Enterprise AI Governance Copilot</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Full Stack</span>
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">NestJS</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                    <p class="project-summary">Enterprise-grade AI governance dashboard for managing policy compliance, risk tracking, and AI system oversight at scale.</p>
+                </div>
+                <span class="modal">
+                    <p><strong>Enterprise AI Governance Copilot</strong> is a full stack governance platform designed to help organisations manage AI policy, track compliance, and maintain oversight of AI systems across departments.</p>
+                    <h3>Key Features</h3>
+                    <ol>
+                        <li>Policy management with versioning and approval workflows</li>
+                        <li>Compliance tracking dashboard with risk scoring</li>
+                        <li>Role-based access control across the organisation</li>
+                        <li>Audit log and activity trail for governance accountability</li>
+                        <li>Turborepo monorepo architecture with separate API and dashboard apps</li>
+                        <li>NestJS REST API backend with Prisma ORM</li>
+                    </ol>
+                    <h3>Tech Stack</h3>
+                    <p>Next.js 14, NestJS, TypeScript, PostgreSQL, Prisma ORM, Turborepo monorepo.</p>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://github.com/8agus/enterprise-ai-governance-copilot" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+                        <span class="project-link-disabled">Live demo planned</span>
+                        <span class="project-link-disabled">Demo video planned</span>
+                    </div>
+                </span>
+            </div>
 
-</div>
+            <!-- 3. Guesthouse Accounting System -->
+            <div class="project-card">
+                <div class="project-image project-image--placeholder project-image--guesthouse"></div>
+                <div class="project-content">
+                    <h3>Guesthouse Accounting System</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Business Systems</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">PDF Automation</span>
+                        <span class="project-tag">Offline First</span>
+                    </div>
+                    <p class="project-summary">Internal accounting and operations management system built for a real guesthouse business. Handles invoicing, guest records, and financial reporting offline.</p>
+                </div>
+                <span class="modal">
+                    <p><strong>Guesthouse Accounting System</strong> is an internal business tool built to replace manual spreadsheet workflows at a real small-scale guesthouse operation. Built for reliability in a low-connectivity environment.</p>
+                    <h3>Key Features</h3>
+                    <ol>
+                        <li>Guest record management and booking history</li>
+                        <li>Automated invoice generation and PDF export</li>
+                        <li>Expense tracking and financial summary reporting</li>
+                        <li>Offline-first SQLite database — no internet dependency</li>
+                        <li>Simple, operator-friendly UI designed for non-technical users</li>
+                    </ol>
+                    <h3>Tech Stack</h3>
+                    <p>Python, Flask, SQLite, ReportLab PDF generation, deployed locally on operator hardware.</p>
+                    <div class="project-links">
+                        <span class="project-link-disabled">Code available on request</span>
+                        <span class="project-link-disabled">Live demo planned</span>
+                        <span class="project-link-disabled">Demo video planned</span>
+                    </div>
+                </span>
+            </div>
 
-<h3 class="compWebHead">Company Website</h3>
-<div class="compWebBox" >
-    <span class="modal">
-        <p>The website is a simple business website that provides information about a fictional company called "Balance and Wellness". The website uses several features and development skills to create a professional and functional website. Here are some of the main features and skills used in its development:</p>
-        <ol>
-            <li>1.	HTML: The website uses HTML to create the structure of the page, including the header, navigation, and content sections.</li>
-            <li>2.	CSS: The website uses CSS to add styling and visual effects to the HTML elements, such as font styles, colors, and layout.</li>
-            <li>3.	Responsive Design: The website is designed to be responsive, meaning it adjusts its layout and content to fit the screen size of different devices, such as desktops, laptops, tablets, and mobile phones.</li>
-            <li>4.	Bootstrap Framework: The website uses the Bootstrap framework to help with the responsive design and layout of the website.</li>
-            <li>5.	JavaScript: The website uses JavaScript to add interactivity and dynamic effects, such as smooth scrolling and a contact form.</li>
-            <li>6.	Google Fonts: The website uses Google Fonts to add custom fonts to the website.</li>
-            <li>7.	Font Awesome Icons: The website uses Font Awesome Icons to add custom icons to the website.</li>
-            <li>8.	GitHub Pages: The website is hosted on GitHub Pages.</li>
-        </ol>
-        <p>Overall, the website demonstrates a good use of HTML, CSS, JavaScript, and the Bootstrap framework to create a professional and functional business website. The website also includes custom fonts and icons to add some visual interest, and a contact form to allow visitors to get in touch with the company.</p>
-        <button><a class="projectLinks" href="https://8agus.github.io/8agus.github.io-business_website/" target="_blank">Link to website</a></button>
-        <button><a class="projectLinks" href="https://github.com/8agus/8agus.github.io-business_website" target="_blank">Link to code</a></button>
-    </span>
-    
+            <!-- 4. Certificate Generator Showcase -->
+            <div class="project-card">
+                <div class="project-image project-image--placeholder project-image--certificate"></div>
+                <div class="project-content">
+                    <h3>Certificate Generator Showcase</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Workflow Automation</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">PDF Automation</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                    <p class="project-summary">Automated certificate generation system demonstrating document workflow automation. Produces print-ready certificates from structured data inputs.</p>
+                </div>
+                <span class="modal">
+                    <p><strong>Certificate Generator Showcase</strong> demonstrates the ability to automate structured document production — a common business requirement in training, HR, and event management contexts.</p>
+                    <h3>Key Features</h3>
+                    <ol>
+                        <li>Data-driven certificate generation from CSV or JSON input</li>
+                        <li>Customisable template layout using HTML and CSS</li>
+                        <li>Batch processing — generate multiple certificates in one run</li>
+                        <li>PDF output ready for print or digital distribution</li>
+                        <li>Demonstrates practical automation thinking applied to a real business workflow</li>
+                    </ol>
+                    <h3>Tech Stack</h3>
+                    <p>Python, HTML, CSS, PDF rendering pipeline.</p>
+                    <div class="project-links">
+                        <span class="project-link-disabled">Code available on request</span>
+                        <span class="project-link-disabled">Live demo planned</span>
+                        <span class="project-link-disabled">Demo video planned</span>
+                    </div>
+                </span>
+            </div>
 
-</div>
+            <!-- 5. Hospitality Invoice Generator -->
+            <div class="project-card">
+                <div class="project-image project-image--placeholder project-image--invoice"></div>
+                <div class="project-content">
+                    <h3>Hospitality Invoice Generator</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Business Systems</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">PDF</span>
+                    </div>
+                    <p class="project-summary">Client-ready invoice generator tailored for hospitality businesses. Generates professional invoices directly in the browser with print-to-PDF output.</p>
+                </div>
+                <span class="modal">
+                    <p><strong>Hospitality Invoice Generator</strong> is a zero-dependency, browser-based invoice tool built for real-world use in a guesthouse or small hospitality operation. No server required — runs entirely in the browser.</p>
+                    <h3>Key Features</h3>
+                    <ol>
+                        <li>Dynamic line-item entry with automatic totalling</li>
+                        <li>Voucher and group invoice support</li>
+                        <li>Professional branded layout ready for client delivery</li>
+                        <li>Print-to-PDF via browser — no dependencies</li>
+                        <li>Demonstrates practical business workflow thinking in a lightweight implementation</li>
+                    </ol>
+                    <h3>Tech Stack</h3>
+                    <p>Vanilla HTML, CSS, and JavaScript. GitHub Pages hosted.</p>
+                    <div class="project-links">
+                        <span class="project-link-disabled">Code available on request</span>
+                        <span class="project-link-disabled">Live demo planned</span>
+                        <span class="project-link-disabled">Demo video planned</span>
+                    </div>
+                </span>
+            </div>
 
-<!-- Dinamic Websites -->
-<h2 class="dinamicHeading">Full Stack Websites</h2>
+        </div><!-- /.project-grid -->
+    </div><!-- /.project-category.featured -->
 
-<h3 class="webCompHead">Web Compliance Tool</h3>
-<div class="webCompBox">
-    <span class="modal">
-        <p>The Web-based banking compliance tool is a project that aims to create a website with several features to capture information during the bank account opening process. The website uses the following features and development skills:</p>
-        <ol>
-            <li>1.	HTML and CSS: The website uses HTML and CSS to create the structure and styling of the web pages, including the KYC page, search page, and quote page.</li>
-            <li>2.	Flask: Flask is a Python web framework used to develop the backend of the website, handling user requests and data processing.</li>
-            <li>3.	SQLite: The website uses SQLite to store the KYC information entered by the user, making it easily accessible for future use.</li>
-            <li>4.	Web Automation: The website uses web automation techniques to automate the web searches that need to be performed on the KYC information entered by the user, reducing the time and effort required to perform these searches manually.</li>
-            <li>5.	Email Integration: The website integrates with an email service to automatically send quotes to the user after they have answered the eight questions on the quote page.</li>
-            <li>6.	cs50: The website uses the cs50 library to handle user input and validation, ensuring that all data entered is in the correct format.</li>
-        </ol>
-        <p>Overall, the Web-based banking compliance tool demonstrates a good use of HTML, CSS, Flask, SQLite, web automation, email integration, and cs50 library to create a user-friendly website that streamlines the bank account opening process by capturing and processing the required information efficiently.</p>
-        <button><a class="projectLinks" href="https://drive.google.com/file/d/1POL3zgtGBOkykttEZT_XekBdRp2hXSD7/view?usp=sharing" target="_blank">Demo Video</a></button>
-        <button><a class="projectLinks" href="https://github.com/8agus/8agus.github.io-compliance_tool" target="_blank">Link to code</a></button>
-    </span>
-</div>
+    <!-- =============================================
+         EARLIER LEARNING PROJECTS
+         ============================================= -->
+    <div class="project-category learning">
+        <h2 class="project-category-heading project-category-heading--learning">Earlier Learning Projects</h2>
+        <div class="project-grid">
 
-<h3 class="finWebHead">Finance Website</h3>
-<div class="finWebBox">
-    <span class="modal">
-        <p>This is a Python Flask web application that simulates a stock trading platform. The following are the features implemented and the skills used for the website development:</p>
-        <ol>
-            <li>1.  Python Flask was used to develop the backend of the website.</li>
-            <li>2.  HTML, CSS, and JavaScript were used to develop the frontend of the website.</li>
-            <li>3.	The website uses SQLite database to store and retrieve </li>
-            <li>4.	The website also uses CS50 Library to interact with the database.</li>
-            <li>5.	The helpers.py module provides the necessary helper functions for the website, such as generating error messages and checking user authentication.</li>
-            <li>6.	The website also uses Werkzeug Security to hash and verify user passwords.</li>
-            <li>7.	The Flask-Session extension was used to configure session to use filesystem instead of signed cookies.</li>
-            <li>8.	The tempfile module was used to create a temporary directory for the session data.</li>
-            <li>9.	The website uses YH Finance API to get the live stock prices.</li>
-            <li>10.	The website uses Jinja2 template engine to render the HTML templates.</li>
-            <li>11.	The website implements the following features:</li>
-            <li class="liIndent" >o	User registration and authentication</li>
-            <li class="liIndent">o	Display of user's portfolio of stocks with their current value and live price.</li>
-            <li class="liIndent">o	Purchase of stocks by the user</li>
-            <li class="liIndent">o	Selling of stocks by the user</li>
-            <li class="liIndent">o	Transaction history of the u</li>
-        </ol>
-    
-        <button><a class="projectLinks" href="https://drive.google.com/file/d/1e8gBWIj-7iGM6WaFMw3AifFU6GqSzDVZ/view?usp=share_link" target="_blank">Demo Video</a></button>
-        <button><a class="projectLinks" href="https://github.com/8agus/financial_website" target="_blank">Link to code</a></button>
-    </span>
-</div>
+            <!-- Lamborghini Website -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('img/lambo.jpg');"></div>
+                <div class="project-content">
+                    <h3>Lamborghini Website</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Front-End</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Bootstrap</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <p class="project-summary">Responsive front-end showcase website built with HTML, CSS, Bootstrap, and JavaScript.</p>
+                </div>
+                <span class="modal">
+                    <p>The website showcases a Lamborghini design website demonstrating front-end development skills including responsive design, Bootstrap framework usage, and JavaScript interactivity.</p>
+                    <ol>
+                        <li>HTML structure for header, navigation, and content sections</li>
+                        <li>CSS styling and visual effects including fonts, colors, and layout</li>
+                        <li>Responsive design adapting to desktop, tablet, and mobile</li>
+                        <li>Bootstrap framework for responsive grid and components</li>
+                        <li>JavaScript for smooth scrolling and lightbox gallery</li>
+                    </ol>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://8agus.github.io/8agus.github.io-lamborghini/" target="_blank">Live Website</a></button>
+                        <button><a class="projectLinks" href="https://github.com/8agus/8agus.github.io-lamborghini" target="_blank">GitHub Repository</a></button>
+                    </div>
+                </span>
+            </div>
 
+            <!-- Company Website -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('img/company_website.jpg');"></div>
+                <div class="project-content">
+                    <h3>Company Website</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Front-End</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Bootstrap</span>
+                        <span class="project-tag">Google Fonts</span>
+                    </div>
+                    <p class="project-summary">Professional business website for a fictional wellness company, hosted on GitHub Pages.</p>
+                </div>
+                <span class="modal">
+                    <p>A professional-looking business website for a fictional company called "Balance and Wellness", demonstrating the ability to build and deploy a polished multi-section site.</p>
+                    <ol>
+                        <li>HTML page structure including header, navigation, and content sections</li>
+                        <li>CSS styling with custom fonts and Font Awesome icons</li>
+                        <li>Responsive design for desktop and mobile</li>
+                        <li>Bootstrap framework for layout and components</li>
+                        <li>JavaScript for smooth scrolling and contact form interactivity</li>
+                        <li>Hosted and live on GitHub Pages</li>
+                    </ol>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://8agus.github.io/8agus.github.io-business_website/" target="_blank">Live Website</a></button>
+                        <button><a class="projectLinks" href="https://github.com/8agus/8agus.github.io-business_website" target="_blank">GitHub Repository</a></button>
+                    </div>
+                </span>
+            </div>
 
-<!-- Game  -->
-<h2 class="gameHead">Command Line Game</h2>
+            <!-- Web Compliance Tool -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('img/Web Base Banking tool .jpg');"></div>
+                <div class="project-content">
+                    <h3>Web Compliance Tool</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Full Stack</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">Web Automation</span>
+                    </div>
+                    <p class="project-summary">Web-based banking compliance capture tool built with Flask, Python, and SQLite — streamlining the KYC account opening process.</p>
+                </div>
+                <span class="modal">
+                    <p>A web application that automates information capture during the bank account opening process, reducing manual effort and improving compliance consistency.</p>
+                    <ol>
+                        <li>HTML and CSS frontend for KYC, search, and quote pages</li>
+                        <li>Flask Python backend handling user requests and data processing</li>
+                        <li>SQLite for persistent KYC record storage</li>
+                        <li>Web automation for compliance search workflows</li>
+                        <li>Email integration to send automated quotes to applicants</li>
+                        <li>Input validation using the cs50 library</li>
+                    </ol>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://drive.google.com/file/d/1POL3zgtGBOkykttEZT_XekBdRp2hXSD7/view?usp=sharing" target="_blank">Demo Video</a></button>
+                        <button><a class="projectLinks" href="https://github.com/8agus/8agus.github.io-compliance_tool" target="_blank">GitHub Repository</a></button>
+                    </div>
+                </span>
+            </div>
 
-<h3 class="comLineHead">Tic-Tac-Toe</h3>
-<div class="comLineBox">
-    <span class="modal">
-        <p>To write a tic-tac-toe game that can be played in the command line, you need to be familiar with programming fundamentals such as variables, data types, functions, loops, conditionals, and user input/output. You should also have knowledge of Python programming language, as well as the Python Standard Library.</p>
-        <p>The main function sets up the game board, prompts the user to choose their symbol, and begins the game by calling the make_selection function.</p>
-        <p>The program uses the choices function from the Python random module to randomly select the computer's move. The setup_board function initializes the game board, and the print_board function displays the board on the screen. The check_for_winner function checks if there is a winner based on the current state of the board.</p>
-        <p>The pc_select function is responsible for selecting a random block on the board for the computer. The make_selection function prompts the user to select a block on the board, updates the board with the user's move, and calls the check_for_winner function to see if the user has won. If no winner is found, the function prompts the computer to make its move and continues until a winner is found or the game ends in a tie.</p>
-        <button><a class="projectLinks" href="https://drive.google.com/file/d/1m-DbID7CDP8672FT8x-mX5zxJ0V_sseV/view?usp=sharing" target="_blank">Demo Video</a></button>
-        <button><a class="projectLinks" href="https://github.com/8agus/tic_tac_toe_cli" target="_blank">Link to code</a></button>
-    </span>
-</div>
+            <!-- Finance Website -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('img/finance.jpg');"></div>
+                <div class="project-content">
+                    <h3>Finance Website</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Full Stack</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">API Integration</span>
+                    </div>
+                    <p class="project-summary">Stock trading simulation platform built with Flask and Python, using live stock price data from the YH Finance API.</p>
+                </div>
+                <span class="modal">
+                    <p>A Python Flask web application simulating a stock trading platform, demonstrating full stack development skills including backend logic, database management, API integration, and authentication.</p>
+                    <ol>
+                        <li>Flask backend for routing, authentication, and data handling</li>
+                        <li>HTML, CSS, and JavaScript frontend with Jinja2 templating</li>
+                        <li>SQLite database for portfolio, transaction, and user records</li>
+                        <li>YH Finance API integration for live stock prices</li>
+                        <li>Werkzeug password hashing for secure authentication</li>
+                        <li>User portfolio display, stock purchase, sale, and transaction history</li>
+                    </ol>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://drive.google.com/file/d/1e8gBWIj-7iGM6WaFMw3AifFU6GqSzDVZ/view?usp=share_link" target="_blank">Demo Video</a></button>
+                        <button><a class="projectLinks" href="https://github.com/8agus/financial_website" target="_blank">GitHub Repository</a></button>
+                    </div>
+                </span>
+            </div>
+
+            <!-- Tic-Tac-Toe -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('img/tictactoe.jpg');"></div>
+                <div class="project-content">
+                    <h3>Tic-Tac-Toe (CLI)</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Command Line</span>
+                        <span class="project-tag">Game Logic</span>
+                    </div>
+                    <p class="project-summary">Command-line Tic-Tac-Toe game built in Python with AI opponent logic using the random module.</p>
+                </div>
+                <span class="modal">
+                    <p>A command-line Tic-Tac-Toe game demonstrating programming fundamentals including variables, data types, functions, loops, conditionals, and user input/output in Python.</p>
+                    <p>The game features a randomised AI opponent. The board is initialised, displayed, and updated each round. A win-check function evaluates board state after each move until a winner is found or the game ends in a draw.</p>
+                    <div class="project-links">
+                        <button><a class="projectLinks" href="https://drive.google.com/file/d/1m-DbID7CDP8672FT8x-mX5zxJ0V_sseV/view?usp=sharing" target="_blank">Demo Video</a></button>
+                        <button><a class="projectLinks" href="https://github.com/8agus/tic_tac_toe_cli" target="_blank">GitHub Repository</a></button>
+                    </div>
+                </span>
+            </div>
+
+        </div><!-- /.project-grid -->
+    </div><!-- /.project-category.learning -->
 
 </section>
-<script src="background.js"></script>
 <script src="modal.js"></script>
 
 </body>
