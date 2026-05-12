@@ -538,6 +538,7 @@ h1 {
 
 /* === Shared: every action cell fills its grid column exactly === */
 .project-links button,
+.project-links > a,
 .project-links .project-link-disabled {
     width: 100%;
     min-height: 52px;
@@ -558,6 +559,31 @@ h1 {
 /* Active button: keep red-gradient style but fill the cell */
 .project-links button {
     box-shadow: 0 4px 14px rgba(244, 38, 6, 0.25);
+}
+
+/* Active direct links inside project-links must look identical to buttons */
+.project-links > a,
+.project-links .project-link {
+    background: linear-gradient(135deg, #f42606 0%, #ff4520 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 14px rgba(244, 38, 6, 0.25);
+    text-decoration: none;
+}
+
+.project-links > a:visited,
+.project-links .project-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.project-links > a:hover,
+.project-links .project-link:hover {
+    background: linear-gradient(135deg, #ff4520 0%, #f42606 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 38, 6, 0.5);
+    color: white;
+    text-decoration: none;
 }
 
 .project-links button:last-of-type {
