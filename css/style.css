@@ -417,23 +417,38 @@ h1 {
 }
 
 .project-image--saffas {
-    background: linear-gradient(135deg, #1a5276 0%, #0d3347 50%, #1C658C 100%);
+    background-color: #0d3347;
+    background-image: url('../img/projects/saffas-ae-connect.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .project-image--governance {
-    background: linear-gradient(135deg, #1a2a40 0%, #0d2137 50%, #1a3550 100%);
+    background-color: #0d2137;
+    background-image: url('../img/projects/enterprise-ai-governance-copilot.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .project-image--guesthouse {
-    background: linear-gradient(135deg, #1a3a1a 0%, #0d2b0d 50%, #1a4a1a 100%);
+    background-color: #0d2b0d;
+    background-image: url('../img/projects/guesthouse-accounting-system.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .project-image--certificate {
-    background: linear-gradient(135deg, #3a2a0a 0%, #2b1e07 50%, #4a3510 100%);
+    background-color: #2b1e07;
+    background-image: url('../img/projects/certificate-generator-showcase.svg');
+    background-size: cover;
+    background-position: center;
 }
 
 .project-image--invoice {
-    background: linear-gradient(135deg, #2a1a3a 0%, #1e0d2b 50%, #351a4a 100%);
+    background-color: #1e0d2b;
+    background-image: url('../img/projects/hospitality-invoice-generator.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Click indicator — shown on hover only, no bouncing emoji */

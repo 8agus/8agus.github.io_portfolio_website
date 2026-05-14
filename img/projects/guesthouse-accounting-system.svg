@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1a0d"/>
+      <stop offset="100%" style="stop-color:#0a1f0a"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#132013"/>
+      <stop offset="100%" style="stop-color:#1a2e1a"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a4a1a"/>
+      <stop offset="100%" style="stop-color:#1C658C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="260" fill="url(#bg)"/>
+
+  <!-- Top nav bar -->
+  <rect x="0" y="0" width="800" height="44" fill="rgba(10,26,10,0.97)"/>
+  <rect x="0" y="44" width="800" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="20" y="17" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Guesthouse</text>
+  <text x="20" y="33" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">Accounting System</text>
+  <!-- Nav links -->
+  <text x="140" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="rgba(57,255,20,0.9)">Dashboard</text>
+  <text x="216" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Guests</text>
+  <text x="266" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Invoices</text>
+  <text x="322" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Expenses</text>
+  <text x="384" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Reports</text>
+  <!-- Offline badge -->
+  <rect x="680" y="12" width="100" height="20" rx="10" fill="rgba(57,255,20,0.15)"/>
+  <circle cx="692" cy="22" r="4" fill="#39FF14"/>
+  <text x="700" y="26" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#39FF14">Offline Ready</text>
+
+  <!-- Summary cards row -->
+  <rect x="20" y="58" width="168" height="68" rx="7" fill="url(#card)"/>
+  <text x="34" y="76" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Monthly Revenue</text>
+  <text x="34" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#39FF14">R 48,350</text>
+  <text x="34" y="116" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(57,255,20,0.6)">↑ 12% vs last month</text>
+
+  <rect x="198" y="58" width="168" height="68" rx="7" fill="url(#card)"/>
+  <text x="212" y="76" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Active Guests</text>
+  <text x="212" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">14</text>
+  <text x="212" y="116" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">6 rooms occupied</text>
+
+  <rect x="376" y="58" width="168" height="68" rx="7" fill="url(#card)"/>
+  <text x="390" y="76" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Invoices Issued</text>
+  <text x="390" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">37</text>
+  <text x="390" y="116" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">This month</text>
+
+  <rect x="554" y="58" width="226" height="68" rx="7" fill="url(#card)"/>
+  <text x="568" y="76" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Total Expenses</text>
+  <text x="568" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#f59e0b">R 12,840</text>
+  <text x="568" y="116" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(245,158,11,0.6)">↓ 4% vs last month</text>
+
+  <!-- Guest records table -->
+  <rect x="20" y="140" width="472" height="110" rx="7" fill="url(#card)"/>
+  <text x="34" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.75)">Recent Guest Records</text>
+  <rect x="20" y="165" width="472" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Table header -->
+  <text x="34" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">NAME</text>
+  <text x="160" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">ROOM</text>
+  <text x="220" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">CHECK-IN</text>
+  <text x="310" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">TOTAL</text>
+  <text x="390" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">STATUS</text>
+
+  <!-- Rows -->
+  <text x="34" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">van der Merwe, J.</text>
+  <text x="160" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">Room 3</text>
+  <text x="220" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">05 May</text>
+  <text x="310" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">R 3,200</text>
+  <rect x="390" y="190" width="52" height="14" rx="7" fill="rgba(57,255,20,0.15)"/>
+  <text x="416" y="201" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#39FF14">Invoiced</text>
+
+  <text x="34" y="218" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Botha, S.</text>
+  <text x="160" y="218" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">Room 1</text>
+  <text x="220" y="218" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">08 May</text>
+  <text x="310" y="218" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">R 2,750</text>
+  <rect x="390" y="210" width="52" height="14" rx="7" fill="rgba(245,158,11,0.15)"/>
+  <text x="416" y="221" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#f59e0b">Pending</text>
+
+  <text x="34" y="238" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Nkosi, T.</text>
+  <text x="160" y="238" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">Room 5</text>
+  <text x="220" y="238" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">10 May</text>
+  <text x="310" y="238" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">R 1,900</text>
+  <rect x="390" y="230" width="52" height="14" rx="7" fill="rgba(57,255,20,0.15)"/>
+  <text x="416" y="241" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#39FF14">Invoiced</text>
+
+  <!-- Invoice panel -->
+  <rect x="502" y="140" width="278" height="110" rx="7" fill="url(#card)"/>
+  <text x="516" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.75)">PDF Invoice Preview</text>
+  <rect x="502" y="165" width="278" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Mini invoice mockup -->
+  <rect x="520" y="172" width="240" height="72" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="520" y="172" width="240" height="18" rx="4" fill="rgba(28,101,140,0.35)"/>
+  <text x="530" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,0.85)">INVOICE #INV-0037</text>
+  <text x="690" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">10 May</text>
+  <text x="530" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Guest: Nkosi, T.  ·  Room 5  ·  3 nights</text>
+  <rect x="530" y="205" width="230" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="530" y="217" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Accommodation (3 × R 550)</text>
+  <text x="696" y="217" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="rgba(255,255,255,0.7)">R 1,650</text>
+  <text x="530" y="229" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Meals</text>
+  <text x="706" y="229" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="rgba(255,255,255,0.7)">R 250</text>
+  <rect x="530" y="233" width="230" height="1" fill="rgba(255,255,255,0.08)"/>
+  <text x="650" y="244" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="700" fill="#39FF14">TOTAL: R 1,900</text>
+
+  <!-- Export button -->
+  <rect x="648" y="174" width="96" height="0" rx="0" fill="transparent"/>
+</svg>
