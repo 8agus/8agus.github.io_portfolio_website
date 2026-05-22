@@ -418,7 +418,7 @@ h1 {
 
 .project-image--saffas {
     background-color: #0d3347;
-    background-image: url('../img/case-studies/saffas/saffas-business-directory.png');
+    background-image: url('../img/case-studies/saffas/saffas-ae-connect.png');
     background-size: cover;
     background-position: center;
 }
@@ -726,7 +726,7 @@ body.project-page .section-heading {
 }
 
 .case-study-image--saffas {
-    background-image: url('../img/case-studies/saffas/saffas-business-directory.png');
+    background-image: url('../img/projects/saffas-ae-connect.png');
     background-color: #0d3347;
 }
 
@@ -847,9 +847,9 @@ body.project-page .section-heading {
 .case-study-actions {
     margin-top: 18px;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 12px;
     flex-wrap: nowrap;
 }
 
@@ -858,16 +858,23 @@ body.project-page .section-heading {
     display: flex;
 }
 
-.case-study-cta a {
+.case-study-actions .case-study-cta a,
+.case-study-actions .case-study-collapse {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
-    padding: 0 16px;
+    height: 46px;
+    padding: 0 18px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 0.86em;
+    font-size: 0.84em;
     font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.case-study-cta a {
     color: #fff;
     background: linear-gradient(135deg, #f42606 0%, #ff4520 100%);
 }
@@ -894,11 +901,6 @@ body.project-page .section-heading {
     background: transparent;
     color: rgba(215, 235, 245, 0.86);
     border: 1px solid rgba(140, 190, 215, 0.35);
-    border-radius: 9px;
-    min-height: 44px;
-    padding: 0 14px;
-    font-size: 0.82em;
-    font-weight: 600;
     cursor: pointer;
     width: auto;
 }
@@ -908,6 +910,7 @@ body.project-page .section-heading {
     border-color: rgba(180, 220, 240, 0.55);
     color: rgba(235, 248, 255, 0.96);
     background: rgba(20, 38, 52, 0.5);
+    box-shadow: 0 0 0 1px rgba(180, 220, 240, 0.16);
 }
 
 .case-study-media-section {
@@ -930,11 +933,19 @@ body.project-page .section-heading {
 }
 
 .case-study-media--screenshot {
-    max-width: 920px;
+    max-width: 860px;
+}
+
+.case-study-media--supporting {
+    max-width: 780px;
 }
 
 .case-study-media--diagram {
     max-width: 760px;
+}
+
+.case-study-media--mobile {
+    max-width: 340px;
 }
 
 .case-study-media--diagram img {
@@ -990,6 +1001,7 @@ body.project-page .section-heading {
     .case-study-actions {
         flex-direction: column;
         align-items: stretch;
+        gap: 10px;
     }
 
     .case-study-cta,
@@ -997,8 +1009,13 @@ body.project-page .section-heading {
         width: 100%;
     }
 
-    .case-study-cta a {
+    .case-study-cta a,
+    .case-study-collapse {
         width: 100%;
+    }
+
+    .case-study-media--mobile {
+        max-width: 320px;
     }
 
     .case-study-media {
