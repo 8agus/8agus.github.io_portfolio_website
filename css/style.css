@@ -847,9 +847,9 @@ body.project-page .section-heading {
 .case-study-actions {
     margin-top: 18px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 1rem;
     flex-wrap: nowrap;
 }
 
@@ -872,6 +872,11 @@ body.project-page .section-heading {
     line-height: 1;
     white-space: nowrap;
     box-sizing: border-box;
+    vertical-align: middle;
+    margin: 0;
+    border: 1px solid transparent;
+    box-shadow: none;
+    transform: none;
 }
 
 .case-study-cta a {
@@ -897,12 +902,19 @@ body.project-page .section-heading {
 }
 
 .case-study-collapse {
-    margin-top: 0;
+    margin: 0;
     background: transparent;
     color: rgba(215, 235, 245, 0.86);
     border: 1px solid rgba(140, 190, 215, 0.35);
     cursor: pointer;
     width: auto;
+    font-family: inherit;
+    font-size: 0.84em;
+    font-weight: 700;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .case-study-collapse:hover,
@@ -910,7 +922,8 @@ body.project-page .section-heading {
     border-color: rgba(180, 220, 240, 0.55);
     color: rgba(235, 248, 255, 0.96);
     background: rgba(20, 38, 52, 0.5);
-    box-shadow: 0 0 0 1px rgba(180, 220, 240, 0.16);
+    box-shadow: none;
+    transform: none;
 }
 
 .case-study-media-section {
@@ -937,7 +950,7 @@ body.project-page .section-heading {
 }
 
 .case-study-media--supporting {
-    max-width: 780px;
+    max-width: 620px;
 }
 
 .case-study-media--diagram {
@@ -945,7 +958,7 @@ body.project-page .section-heading {
 }
 
 .case-study-media--mobile {
-    max-width: 340px;
+    max-width: 240px;
 }
 
 .case-study-media--diagram img {
@@ -1015,7 +1028,8 @@ body.project-page .section-heading {
     }
 
     .case-study-media--mobile {
-        max-width: 320px;
+        width: 70%;
+        max-width: 240px;
     }
 
     .case-study-media {
