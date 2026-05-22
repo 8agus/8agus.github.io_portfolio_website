@@ -418,7 +418,7 @@ h1 {
 
 .project-image--saffas {
     background-color: #0d3347;
-    background-image: url('../img/projects/saffas-ae-connect.png');
+    background-image: url('../img/case-studies/saffas/saffas-business-directory.png');
     background-size: cover;
     background-position: center;
 }
@@ -726,7 +726,7 @@ body.project-page .section-heading {
 }
 
 .case-study-image--saffas {
-    background-image: url('../img/projects/saffas-ae-connect.png');
+    background-image: url('../img/case-studies/saffas/saffas-business-directory.png');
     background-color: #0d3347;
 }
 
@@ -876,6 +876,19 @@ body.project-page .section-heading {
     box-shadow: 0 5px 16px rgba(244, 38, 6, 0.45);
 }
 
+.case-study-cta--secondary a {
+    background: transparent;
+    color: rgba(223, 240, 248, 0.92);
+    border: 1px solid rgba(140, 190, 215, 0.35);
+    box-shadow: none;
+}
+
+.case-study-cta--secondary a:hover,
+.case-study-cta--secondary a:focus-visible {
+    background: rgba(20, 38, 52, 0.5);
+    box-shadow: none;
+}
+
 .case-study-collapse {
     margin-top: 0;
     background: transparent;
@@ -895,6 +908,38 @@ body.project-page .section-heading {
     border-color: rgba(180, 220, 240, 0.55);
     color: rgba(235, 248, 255, 0.96);
     background: rgba(20, 38, 52, 0.5);
+}
+
+.case-study-media-section {
+    margin-top: 14px;
+}
+
+.case-study-media {
+    margin: 12px auto 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(180, 220, 240, 0.18);
+    background: rgba(5, 12, 22, 0.75);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+}
+
+.case-study-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.case-study-media--screenshot {
+    max-width: 920px;
+}
+
+.case-study-media--diagram {
+    max-width: 760px;
+}
+
+.case-study-media--diagram img {
+    padding: 16px;
+    background: rgba(7, 16, 29, 0.75);
 }
 
 @media only screen and (max-width: 900px) {
@@ -947,8 +992,21 @@ body.project-page .section-heading {
         align-items: stretch;
     }
 
+    .case-study-cta,
+    .case-study-cta--secondary {
+        width: 100%;
+    }
+
     .case-study-cta a {
         width: 100%;
+    }
+
+    .case-study-media {
+        margin-top: 10px;
+    }
+
+    .case-study-media--diagram img {
+        padding: 12px;
     }
 
     .case-study-collapse {
