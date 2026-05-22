@@ -655,6 +655,307 @@ body.project-page .section-heading {
     background: linear-gradient(135deg, rgba(28, 101, 140, 0.75) 0%, rgba(18, 70, 100, 0.65) 100%);
 }
 
+/* Featured Case Studies accordion */
+.case-studies {
+    margin: 8px 0 34px;
+    padding: 22px;
+    background: rgba(7, 16, 29, 0.72);
+    border: 1px solid rgba(100, 160, 200, 0.25);
+    border-radius: 16px;
+}
+
+.case-studies-header {
+    margin-bottom: 18px;
+}
+
+.case-studies-title {
+    color: #e8f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.45em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+}
+
+.case-studies-subtitle {
+    margin: 0;
+    color: rgba(225, 244, 255, 0.78);
+    font-size: 0.96em;
+    line-height: 1.6;
+}
+
+.case-studies-accordion {
+    display: grid;
+    gap: 12px;
+}
+
+.case-study-item {
+    background: rgba(10, 24, 40, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.case-study-item.is-highlighted {
+    border-color: rgba(57, 255, 20, 0.42);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+
+.case-study-item.is-open {
+    border-color: rgba(100, 160, 200, 0.55);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+.case-study-preview {
+    display: grid;
+    grid-template-columns: minmax(170px, 240px) 1fr;
+    gap: 16px;
+    padding: 14px;
+}
+
+.case-study-image {
+    width: 100%;
+    min-height: 148px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.case-study-image--saffas {
+    background-image: url('../img/projects/saffas-ae-connect.png');
+    background-color: #0d3347;
+}
+
+.case-study-image--governance {
+    background-image: url('../img/projects/enterprise-ai-governance-copilot.png');
+    background-color: #0d2137;
+}
+
+.case-study-image--guesthouse {
+    background-image: url('../img/projects/guesthouse-accounting-system.png');
+    background-color: #0d2b0d;
+}
+
+.case-study-preview-content {
+    display: grid;
+    gap: 8px;
+    align-content: start;
+}
+
+.case-study-preview-content h3 {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.35;
+}
+
+.case-study-short-title {
+    color: rgba(180, 230, 250, 0.9);
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.case-study-preview-text {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.case-study-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.case-study-pill {
+    background: rgba(28, 101, 140, 0.2);
+    border: 1px solid rgba(100, 160, 200, 0.24);
+    color: rgba(210, 238, 250, 0.9);
+    border-radius: 999px;
+    font-size: 0.72em;
+    font-weight: 600;
+    padding: 4px 10px;
+}
+
+.case-study-toggle {
+    margin-top: 4px;
+    justify-self: start;
+    background: linear-gradient(135deg, #f42606 0%, #ff4520 100%);
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 10px 14px;
+    font-size: 0.84em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: auto;
+}
+
+.case-study-toggle:hover,
+.case-study-toggle:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 16px rgba(244, 38, 6, 0.4);
+}
+
+.case-study-expanded {
+    padding: 0 18px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(6, 15, 26, 0.62);
+}
+
+.case-study-expanded section {
+    margin-top: 14px;
+}
+
+.case-study-expanded h4 {
+    margin: 0 0 5px;
+    color: #d9f4ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.case-study-expanded p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.92em;
+    line-height: 1.6;
+}
+
+.case-study-expanded ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.case-study-expanded li {
+    display: list-item;
+    color: rgba(255, 255, 255, 0.86);
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    line-height: 1.55;
+}
+
+.case-study-actions {
+    margin-top: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.case-study-cta {
+    margin-top: 0;
+    display: flex;
+}
+
+.case-study-cta a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.86em;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #f42606 0%, #ff4520 100%);
+}
+
+.case-study-cta a:hover {
+    box-shadow: 0 5px 16px rgba(244, 38, 6, 0.45);
+}
+
+.case-study-collapse {
+    margin-top: 0;
+    background: transparent;
+    color: rgba(215, 235, 245, 0.86);
+    border: 1px solid rgba(140, 190, 215, 0.35);
+    border-radius: 9px;
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 0.82em;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+}
+
+.case-study-collapse:hover,
+.case-study-collapse:focus-visible {
+    border-color: rgba(180, 220, 240, 0.55);
+    color: rgba(235, 248, 255, 0.96);
+    background: rgba(20, 38, 52, 0.5);
+}
+
+@media only screen and (max-width: 900px) {
+    .case-studies {
+        padding: 18px;
+    }
+
+    .case-study-preview {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-image {
+        min-height: 170px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .case-studies {
+        margin: 4px 0 26px;
+        padding: 14px;
+    }
+
+    .case-studies-title {
+        font-size: 1.18em;
+    }
+
+    .case-studies-subtitle {
+        font-size: 0.9em;
+    }
+
+    .case-study-preview {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .case-study-image {
+        min-height: 145px;
+    }
+
+    .case-study-expanded {
+        padding: 0 12px 14px;
+    }
+
+    .case-study-toggle {
+        width: 100%;
+    }
+
+    .case-study-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .case-study-cta a {
+        width: 100%;
+    }
+
+    .case-study-collapse {
+        width: 100%;
+    }
+}
+
 /* Bounce animation for click indicator */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -975,12 +1276,6 @@ button a {
 
 #clpic {
     background-image: url('../img/command_line.jpg');
-}
-    height: 129px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
 }
 
 #stackTopic {
