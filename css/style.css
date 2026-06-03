@@ -731,7 +731,7 @@ body.project-page .section-heading {
 }
 
 .case-study-image--governance {
-    background-image: url('../img/projects/enterprise-ai-governance-copilot.png');
+    background-image: url('../img/case-studies/enterprise-ai-governance-copilot/enterprise-ai-governance-copilot.png');
     background-color: #0d2137;
 }
 
@@ -972,12 +972,21 @@ body.project-page .section-heading {
     max-width: 860px;
 }
 
+.case-study-media--hero {
+    width: min(100%, 600px);
+    max-width: 600px;
+}
+
 .case-study-media--supporting {
     max-width: 620px;
 }
 
 .case-study-media--diagram {
+    width: min(68%, 760px);
     max-width: 760px;
+    background: #ffffff;
+    border: 1px solid rgba(15, 45, 65, 0.18);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
 }
 
 .case-study-media--mobile {
@@ -985,8 +994,8 @@ body.project-page .section-heading {
 }
 
 .case-study-media--diagram img {
-    padding: 16px;
-    background: rgba(7, 16, 29, 0.75);
+    padding: 12px;
+    background: #ffffff;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1000,6 +1009,10 @@ body.project-page .section-heading {
 
     .case-study-image {
         min-height: 170px;
+    }
+
+    .case-study-media--diagram {
+        width: min(80%, 760px);
     }
 }
 
@@ -1060,7 +1073,12 @@ body.project-page .section-heading {
     }
 
     .case-study-media--diagram img {
-        padding: 12px;
+        padding: 10px;
+    }
+
+    .case-study-media--diagram {
+        width: 100%;
+        max-width: 100%;
     }
 
     .case-study-collapse {
@@ -1663,4 +1681,3 @@ body.certification-page #certification h2 {
 body.certification-page #certification li::before {
     color: rgba(100, 160, 200, 0.7);
 }
-
